@@ -56,7 +56,7 @@ education:
   - area: MA International Relations
     institution: Charles University
     date_start: 2023-10-01
-    date_end: 2025-09-31
+    date_end: 2025-09-30
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
