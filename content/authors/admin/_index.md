@@ -52,7 +52,7 @@ interests:
   - Statistics
 
 education:
-  - area: MA International Relations
+  - area: MA International Relations - in progress
     institution: Charles University
     date_start: 2023-10-01
     date_end: 2025-09-30
@@ -61,7 +61,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: BA Political Science and International Relations
+  - area: BA Political Science & International Relations, 2023
     institution: Charles University
     date_start: 2020-10-01
     date_end: 2023-06-30
