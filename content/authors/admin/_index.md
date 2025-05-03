@@ -3,11 +3,11 @@
 title: Štěpán Jabůrek
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+# name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Štěpán
+last_name: Jabůrek
 
 # Status emoji
 status:
@@ -25,37 +25,39 @@ role: MA Student
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: Charles University
-    url: https://openai.com/
+    url: https://ips.fsv.cuni.cz/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:stepan.jaburek@seznam.cz'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: https://twitter.com/stepan_jaburek
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/stepanjaburek
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/stepanjaburek
   - icon: brands/linkedin
     url: https://www.linkedin.com/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://bsky.app/profile/stepanjaburek.bsky.social
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Political Science
+  - International Cooperation
+  - Political Debates
+  - Computational Text Analysis
+  - Statistics
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: MA International Relations
+    institution: Charles University
+    date_start: 2023-10-01
+    date_end: 2025-09-31
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
@@ -72,10 +74,10 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: BA Political Science and International Relations
+    institution: Charles University
+    date_start: 2020-10-01
+    date_end: 2023-06-31
     summary: |
       GPA: 3.4/4.0
       
@@ -183,4 +185,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Chien Shiung Wu is a MA student at Charles University. His research interests include international cooperation, political debates, and computaitonal text analysis in political research. He is a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University.
