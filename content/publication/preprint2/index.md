@@ -1,5 +1,5 @@
 ---
-title: "Memebership in the EU: Identity or Utility? Evidence from Czech Chamber Parliamentary Debates"
+title: "Memebership in the EU: Identity or Utility? Evidence from Czech Parliamentary Debates"
 authors:
 - admin
 date: "2025-04-07T00:00:00Z"
