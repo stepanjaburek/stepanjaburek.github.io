@@ -76,7 +76,7 @@ education:
   - area: BA Political Science and International Relations
     institution: Charles University
     date_start: 2020-10-01
-    date_end: 2023-06-31
+    date_end: 2023-06-30
     summary: |
       GPA: 3.4/4.0
       
