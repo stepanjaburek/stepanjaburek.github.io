@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 吳健雄
+title: Štěpán Jabůrek
 
 # Name pronunciation (optional)
 name_pronunciation: Chien Shiung Wu
@@ -20,11 +20,11 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: MA Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
+  - name: Charles University
     url: https://openai.com/
 
 # Social network links
