@@ -47,8 +47,8 @@ profiles:
 
 interests:
   - Political Science
-  - International Cooperation
-  - Political Debates
+  - International Organizations
+  - Parliamentary Debates
   - Computational Text Analysis
   - Statistics
 
@@ -62,17 +62,6 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
   - area: BA Political Science and International Relations
     institution: Charles University
     date_start: 2020-10-01
