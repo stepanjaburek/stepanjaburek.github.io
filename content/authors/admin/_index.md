@@ -46,9 +46,8 @@ profiles:
 
 
 interests:
-  - Political Science
   - International Organizations
-  - Parliamentary Debates
+  - Parliamentary Debates and Political Communication
   - Computational Text Analysis
   - Statistics
 
@@ -147,4 +146,6 @@ languages:
 
 ## About Me
 
-Stepan Jaburek is a MA student at Charles University. His research interests include international cooperation, political debates, and computaitonal text analysis in political research. He is a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University.
+Hi! My name is Štěpán Jabůrek. I am a master´s student at the Institue of Political Studies at Charles University. I am currently a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University on projects dealing with quantum social science and economcis of crime respecrtively. 
+
+My own substantive research interests revolve around international cooperation and political communication. Methodologically, I am interested in computational text analysis in political research and statistical modeling. 
