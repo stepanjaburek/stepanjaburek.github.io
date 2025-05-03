@@ -34,17 +34,16 @@ profiles:
     url: 'mailto:stepan.jaburek@seznam.cz'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/stepan_jaburek
+    url: https://twitter.com/stepan_jaburek/
   - icon: brands/instagram
-    url: https://www.instagram.com/stepanjaburek
+    url: https://www.instagram.com/stepanjaburek/
   - icon: brands/github
-    url: https://github.com/stepanjaburek
+    url: https://github.com/stepanjaburek/
   - icon: brands/linkedin
     url: https://www.linkedin.com/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://bsky.app/profile/stepanjaburek.bsky.social
+
 
 interests:
   - Political Science
@@ -185,4 +184,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a MA student at Charles University. His research interests include international cooperation, political debates, and computaitonal text analysis in political research. He is a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University.
+Stepan Jaburek is a MA student at Charles University. His research interests include international cooperation, political debates, and computaitonal text analysis in political research. He is a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University.
