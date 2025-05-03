@@ -1,8 +1,10 @@
 ---
-title: "Memebership in the EU: Identity or Utility? Evidence from Czech Chamber Parliamentary Debates"
+title: "Quantum Social Science"
 authors:
+- Jakub Tesař
+- Michael Schnabel
 - admin
-date: "2025-04-07T00:00:00Z"
+date: "2025-04-08T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -23,9 +25,8 @@ abstract: .
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- International Organizations
-- Parliamentary Debates
 - Computational Text Analysis
+- Quantum Social Science
 
 featured: true
 
