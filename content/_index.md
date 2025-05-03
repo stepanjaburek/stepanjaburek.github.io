@@ -45,7 +45,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Working Papers
       filters:
         folders:
           - publication
@@ -60,7 +60,7 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: false
+        featured_only: true
     design:
       view: citation
   - block: cta-card
