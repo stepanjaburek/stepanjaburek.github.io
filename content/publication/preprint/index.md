@@ -14,7 +14,7 @@ publishDate: "2017-01-01T00:00:00Z"
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
@@ -32,8 +32,8 @@ tags:
 featured: true
 
 links:
-- name: Custom Link
-  url: http://example.org
+#- name: Custom Link
+#  url: http://example.org
 # url_pdf: http://arxiv.org/pdf/1512.04133v1
 url_code: 'https://github.com/stepanjaburek/workingpaper_czech_psp_speeches'
 url_dataset: 'https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FOQUZF'
