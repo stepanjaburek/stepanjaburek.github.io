@@ -11,7 +11,7 @@ last_name: Jabůrek
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: ☕️🍻
 
 # Is this the primary user of the site?
 superuser: true
@@ -40,7 +40,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/stepanjaburek/
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/%C5%A1t%C4%9Bp%C3%A1n-jab%C5%AFrek-278638260/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
 
@@ -146,6 +146,6 @@ languages:
 
 ## About Me
 
-Hi! My name is Štěpán Jabůrek. I am a master´s student at the Institue of Political Studies at Charles University. I am currently a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University on projects dealing with quantum social science and economcis of crime respecrtively. 
+Hi! My name is Štěpán Jabůrek. I am a master´s student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/) at Charles University. I am currently a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University. 
 
 My own substantive research interests revolve around international cooperation and political communication. Methodologically, I am interested in computational text analysis in political research and statistical modeling. 
