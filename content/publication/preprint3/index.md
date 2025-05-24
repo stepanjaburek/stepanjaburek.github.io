@@ -1,5 +1,5 @@
 ---
-title: "Quantum Social Science"
+title: "Conceptual Review of Quantum Social Science"
 authors:
 - Jakub Tesař
 - Michael Schnabel
