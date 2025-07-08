@@ -148,4 +148,4 @@ languages:
 
 Hi! My name is Štěpán Jabůrek. I am a master´s student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/en) at Charles University in Prague. I am currently a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University. 
 
-In my reseach assistance positions I have worked on various projects ranging from a conceptual review of Quantum Social Science literature to a project in economics of crime. My own substantive research interests revolve mainly around political communication, the politicization of international cooperation, and generally the intersection of domestic and international politics. Methodologically, I am interested in statistics and computational text analysis in political research. 
+My substantive research interests revolve mainly around political communication, the politicization of international cooperation, and generally the intersection of domestic and international politics. Methodologically, I am interested in statistics and computational text analysis in political research. 
