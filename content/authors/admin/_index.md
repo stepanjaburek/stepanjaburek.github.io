@@ -42,7 +42,7 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/%C5%A1t%C4%9Bp%C3%A1n-jab%C5%AFrek-278638260/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=sEcbAPUAAAAJ&hl=en&authuser=2
 
 
 interests:
@@ -148,4 +148,4 @@ languages:
 
 Hi! My name is Štěpán Jabůrek. I am a master´s student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/en) at Charles University in Prague. I am currently a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University. 
 
-My substantive research interests revolve mainly around political communication, the politicization of international cooperation, and generally the intersection of domestic and international politics. Methodologically, I am interested in statistics and computational text analysis in political research. 
+My substantive research revolves mainly around political communication, international cooperation, and generally the intersection of domestic and international politics. Methodologically, I am interested in statistics and computational text analysis in political research. 
