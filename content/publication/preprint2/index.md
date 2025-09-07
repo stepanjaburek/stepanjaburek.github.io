@@ -1,5 +1,5 @@
 ---
-title: "Moderating Criticism While in Government? Changes in Expressed Stances Towards the EU in Czech Parliamentary Debates”"
+title: "Moderating Criticism While in Government? Changes in Expressed Stances Towards the EU in Czech Parliamentary Debates"
 authors:
 - admin
 date: "2025-04-07T00:00:00Z"
