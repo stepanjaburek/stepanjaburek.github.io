@@ -21,7 +21,7 @@ sections:
     design:
       css_class: dark
       background:
-        color: white
+        color: emerald
         #image:
           # Add your image background to `assets/media/`.
           #filename: cph.jpg
