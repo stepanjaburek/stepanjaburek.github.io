@@ -19,10 +19,10 @@ sections:
         text: Download CV
         url: uploads/resume.pdf
     design:
-      css_class:
+      css_class: 
       background:
         color: white
-        image:
+        #image:
           # Add your image background to `assets/media/`.
           #filename: cph.jpg
           #filters:
