@@ -36,6 +36,8 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
+      image: "cph.jpg"  
+      alt: "My Logo"
       text: "Štěpán Jabůrek"
      
 
