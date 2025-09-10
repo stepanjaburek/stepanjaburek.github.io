@@ -31,10 +31,11 @@ header:
   navbar:
     enable: true
     color: emerald
+    align: "left"
     blox: "navbar"
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: true
+    show_theme_chooser: false
     logo:
       image: icon.jpg 
       alt: "My Logo"
