@@ -30,12 +30,14 @@ marketing:
 header:
   navbar:
     enable: true
+    color: emerald
     blox: "navbar"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
       text: "Štěpán Jabůrek"
+     
 
 # Site footer
 footer:
