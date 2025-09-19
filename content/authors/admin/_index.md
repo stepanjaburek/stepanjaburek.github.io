@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: MA Student
+role: PhD Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -46,9 +46,9 @@ profiles:
 
 
 interests:
-  - International Organizations
-  - Parliamentary Debates and Political Communication
-  - Computational Text Analysis
+  - International Cooperation
+  - Political Communication
+  - Natural Language Processing
   - Statistics
 
 education:
@@ -61,7 +61,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: Master in International Relations, 2025
+  - area: Master' in International Relations, 2025
     institution: Charles University
     date_start: 2023-10-01
     date_end: 2025-09-30
@@ -70,7 +70,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: Bachelor in Political Science, 2023
+  - area: Bachelor's in Political Science, 2023
     institution: Charles University
     date_start: 2020-10-01
     date_end: 2023-06-30
@@ -155,6 +155,6 @@ languages:
 
 ## About Me
 
-Hi! My name is Štěpán Jabůrek. I am a master´s student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/en) at Charles University in Prague. I am currently a research assistant at the Faculty of Social Sciences and the Faculty of Law at Charles University. 
+Hi! My name is Štěpán Jabůrek. I am an incoming PhD student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/en) at Charles University in Prague and a researcher within the Horizon ENSURED project. 
 
-My substantive research revolves mainly around political communication, international cooperation, and generally the intersection of domestic and international politics. Methodologically, I am interested in statistics and computational text analysis in political research. 
+My substantive research revolves mainly around international cooperation, political communication, and generally the intersection of domestic and international politics. Methodologically, I am interested in natural language processing and statistics in political research. 
