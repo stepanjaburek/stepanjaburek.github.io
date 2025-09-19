@@ -61,7 +61,7 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: Master' in International Relations, 2025
+  - area: Master's in International Relations, 2025
     institution: Charles University
     date_start: 2023-10-01
     date_end: 2025-09-30
