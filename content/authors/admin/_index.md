@@ -52,7 +52,7 @@ interests:
   - Statistics
 
 education:
-  - area: MA International Relations - in progress
+  - area: PhD in International Relations, in progress
     institution: Charles University
     date_start: 2023-10-01
     date_end: 2025-09-30
@@ -61,7 +61,16 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: BA Political Science & International Relations, 2023
+  - area: Master in International Relations, 2025
+    institution: Charles University
+    date_start: 2023-10-01
+    date_end: 2025-09-30
+    summary: |
+      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+    button:
+      text: 'Read Thesis'
+      url: 'https://example.com'
+  - area: Bachelor in Political Science, 2023
     institution: Charles University
     date_start: 2020-10-01
     date_end: 2023-06-30
