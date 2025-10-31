@@ -36,7 +36,7 @@ sections:
       text: ""
       filters:
         folders:
-          - publication/published
+          - published
         exclude_featured: true
     design:
       view: citation
@@ -46,7 +46,7 @@ sections:
       title: Working Papers
       filters:
         folders:
-          - publication/work-in-progress
+          - work-in-progress
         featured_only: true
     design:
       view: article-grid
