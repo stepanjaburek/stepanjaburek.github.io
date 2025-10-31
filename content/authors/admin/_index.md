@@ -157,4 +157,4 @@ languages:
 
 Hi! My name is Štěpán Jabůrek. I am an incoming PhD student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/en) at Charles University in Prague and a researcher within [Horizon ENSURED](https://www.ensuredeurope.eu/ ).
 
-My substantive research revolves mainly around international cooperation, political communication, and generally the intersection of domestic and international politics. Methodologically, I am interested in natural language processing and statistics in political research. 
+My substantive research revolves mainly around international cooperation, party politics, and generally the intersection of domestic and international politics. Methodologically, I am interested in natural language processing and statistics in political research. 
