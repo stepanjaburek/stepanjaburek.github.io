@@ -1,15 +1,17 @@
 {{/* layouts/shortcodes/publist.html
-     Usage: {{< publist section="published" title="Published Work" >}}
+   Usage: {{< publist section="published" title="Published Work" >}}
 */}}
 {{ $section := .Get "section" | default "published" }}
 {{ $title := .Get "title" | default (humanize $section) }}
-{{ $page := .Site.GetPage (printf "publication/%s" $section) }}
 
 <h2>{{ $title }}</h2>
 
-{{ if and $page (gt (len $page.RegularPages) 0) }}
+{{ $all := where .Site.RegularPages "Section" "publication" }}
+{{ $pages := where $all "RelPermalink" "match" (printf "^/publication/%s/" $section) }}
+
+{{ if gt (len $pages) 0 }}
 <ul>
-  {{ range $page.RegularPages.ByDate.Reverse }}
+  {{ range $pages.ByDate.Reverse }}
   <li>{{ .Title }}</li>
   {{- end }}
 </ul>
