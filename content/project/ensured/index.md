@@ -1,6 +1,6 @@
 ---
 title: Horizon ENSURED
-date: 2025-10-31
+date: 
 external_link: https://www.ensuredeurope.eu/
 tags:
 ---
