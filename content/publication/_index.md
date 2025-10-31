@@ -10,3 +10,7 @@ banner:
   caption: ''
   image: ''
 ---
+A landing page for publications. Choose a section below to see items.
+
+- [Published Work](/publication/published/)
+- [Work in Progress](/publication/work-in-progress/)
