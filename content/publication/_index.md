@@ -10,7 +10,8 @@ banner:
   caption: ''
   image: ''
 ---
-A landing page for publications. Choose a section below to see items.
+A landing page for publications.
 
-- [Published Work](/publication/published/)
-- [Work in Progress](/publication/work-in-progress/)
+{{< publist section="published" title="Published Work" >}}
+
+{{< publist section="work-in-progress" title="Work in Progress" >}}
