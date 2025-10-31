@@ -7,8 +7,8 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Publications
-    identifier: publications
+  - name: Research
+    identifier: research
     url: /publication/
     weight: 20
 
