@@ -8,6 +8,13 @@ main:
     url: /
     weight: 10
   - name: Research
-    url: /#papers
-    weight: 11
+    identifier: research
+    url: /research/
+    weight: 20
 
+---
+title: "Research"
+date: 2025-10-31
+draft: false
+summary: "Research projects and publications"
+---
