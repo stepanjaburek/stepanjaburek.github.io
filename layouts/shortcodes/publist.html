@@ -1,17 +1,18 @@
-{{/* Shortcode: publist
-     Params:
-       section - folder name under content/publication (e.g. "published" or "work-in-progress")
-       title   - heading text to show above the list
+{{/* layouts/shortcodes/publist.html
      Usage: {{< publist section="published" title="Published Work" >}}
 */}}
 {{ $section := .Get "section" | default "published" }}
-{{ $title := .Get "title" | default (printf "%s" (humanize $section)) }}
-{{ $page := site.GetPage (printf "section" "publication/%s" $section) }}
-## {{ $title }}
+{{ $title := .Get "title" | default (humanize $section) }}
+{{ $page := .Site.GetPage (printf "publication/%s" $section) }}
+
+<h2>{{ $title }}</h2>
+
 {{ if and $page (gt (len $page.RegularPages) 0) }}
-{{ range $page.RegularPages -}}
-- {{ .Title }}
-{{- end }}
+<ul>
+  {{ range $page.RegularPages.ByDate.Reverse }}
+  <li>{{ .Title }}</li>
+  {{- end }}
+</ul>
 {{ else }}
-_No items found._
+<p><em>No items found.</em></p>
 {{ end }}
