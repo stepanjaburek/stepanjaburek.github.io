@@ -4,14 +4,13 @@ type: landing
 date: 2024-05-19
 
 design:
-  spacing: '5rem'
+  spacing: '2rem'
 
 # Page sections
 sections:
   - block: collection
     content:
       title: "Published Work"
-      text: "Selected peer-reviewed and published papers."
       filters:
         folders:
           - publications
@@ -26,7 +25,7 @@ sections:
   - block: collection
     content:
       title: "Work in Progress"
-      text: "Ongoing projects and drafts in development."
+      text: "Working papers and drafts in development."
       filters:
         folders:
           - publications
