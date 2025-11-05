@@ -11,8 +11,8 @@ design:
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I am inolved in several project. Here is a selection of current projects I am working on.
+      title: Current Projects
+      text: Here is a selection of current projects I am working on.
       filters:
         folders:
           - projects

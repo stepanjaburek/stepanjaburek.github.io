@@ -1,5 +1,5 @@
 ---
-title: "Working Paper - Parliamentary Discourse aboutthe Left and Right in a Postcommunist Context: The Czech Case"
+title: "Working Paper - Parliamentary Discourse about the Left and Right in a Postcommunist Context: The Czech Case"
 authors:
 - admin 
 - Vojtěch Pohanka
