@@ -61,9 +61,9 @@ education:
     date_end: 2029-06-30
     summary: 
 
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
+#    button:
+ #     text: 'Read Thesis'
+  #    url: 'https://example.com/thesis.pdf'
   - area: MA International Relations
     institution: Charles University
     icon: ""
