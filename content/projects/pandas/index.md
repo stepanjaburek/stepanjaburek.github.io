@@ -1,6 +1,6 @@
 ---
-title: ENSRUED
-date: 2023-10-26
+title: ENSURED
+date: 2025-07-01
 links:
   - type: site
     url: https://www.ensuredeurope.eu/
@@ -10,6 +10,6 @@ tags:
   - Markdown
 ---
 
-Ensured
+I am a researcher within the Horizon Europe project ENSURED.
 
 <!--more-->
