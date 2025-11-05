@@ -55,9 +55,19 @@ sections:
       filters:
         folders:
           - publications
-        exclude_featured: false
+        featured_only: true
     design:
       view: citation
+  - block: collection
+    content:
+      title: Work in Progress Publications
+      text: ''
+      filters:
+        folders:
+          - publications
+        exclude_featured: true
+    design:
+      view: citation    
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:

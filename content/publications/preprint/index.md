@@ -1,5 +1,5 @@
 ---
-title: "Parliamentary Discourse aboutthe Left and Right in a Postcommunist Context: The Czech Case"
+title: "Working Paper - Parliamentary Discourse aboutthe Left and Right in a Postcommunist Context: The Czech Case"
 authors:
 - admin 
 - Vojtěch Pohanka
@@ -29,7 +29,7 @@ tags:
 - Postcommunism
 - NLP
 
-featured: true
+featured: false
 
 hugoblox:
   ids:

@@ -27,7 +27,7 @@ tags:
 - NLP
 
 
-featured: true
+featured: false
 
 hugoblox:
   ids:
