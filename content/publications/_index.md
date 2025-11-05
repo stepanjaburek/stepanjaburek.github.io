@@ -11,17 +11,12 @@ sections:
   - block: collection
     content:
       title: "Published Work"
-      text: "Selected peer-reviewed and published papers."
       filters:
         folders:
           - publication
         featured_only: true
     design:
       view: citation
-      template: citation
-      show_date: false
-      show_summary: false
-      show_image: false
 
   - block: collection
     content:
@@ -33,8 +28,5 @@ sections:
         exclude_featured: true
     design:
       view: citation
-      template: citation
-      show_date: false
-      show_summary: false
-      show_image: false
+
 ---
