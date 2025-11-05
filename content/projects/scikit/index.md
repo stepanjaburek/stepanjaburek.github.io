@@ -1,5 +1,5 @@
 ---
-title: scikit-learn
+title: Political Speeches NLP Team
 date: 2023-10-26
 links:
   - type: site
@@ -10,6 +10,6 @@ tags:
   - Markdown
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+NLP research group of PhD and MA students from Prague
 
 <!--more-->
