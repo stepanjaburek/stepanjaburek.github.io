@@ -84,7 +84,7 @@ work:
     company_name: Charles University
     company_url: 'https://ips.fsv.cuni.cz/en'
     icon: ''
-    date_start: 2025-01-01
+    date_start: 2025-09-01
     date_end: ''
 
 
@@ -148,13 +148,7 @@ awards:
     icon: hero/currency-dollar
     summary: |
       $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
-    url: https://www.stanford.edu/
-    date: '2019-06-30'
-    awarder: Stanford University
-    icon: hero/academic-cap
-    summary: |
-      Recognized for contributions to scaling laws in deep learning.
+
 ---
 
 Hi! My name is Štěpán Jabůrek. I am a PhD student at the Institute of Political Studies at Charles University in Prague and a researcher within Horizon ENSURED.
