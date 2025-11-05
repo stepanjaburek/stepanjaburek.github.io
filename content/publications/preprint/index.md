@@ -1,8 +1,11 @@
 ---
-title: "arliamentary Discourse aboutthe Left and Right in a Postcommunist Context: The Czech Case"
+title: "Parliamentary Discourse aboutthe Left and Right in a Postcommunist Context: The Czech Case"
 authors:
-- admin
-date: "2035-10-07T00:00:00Z"
+- admin 
+- Vojtěch Pohanka
+- Jan Vondráček
+- Tomáš Kremla
+date: "2025-10-07T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -30,7 +33,7 @@ featured: true
 
 hugoblox:
   ids:
-    arxiv: 1512.04133v1
+ #   arxiv: 1512.04133v1
 
 links:
 #- type: preprint
