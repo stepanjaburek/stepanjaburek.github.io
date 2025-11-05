@@ -59,7 +59,7 @@ education:
     icon: ""
     date_start: 2025-09-01
     date_end: 2029-06-30
-    summary: |
+    summary: 
 
     button:
       text: 'Read Thesis'
@@ -69,14 +69,14 @@ education:
     icon: ""
     date_start: 2023-09-01
     date_end: 2025-05-31
-    summary: |
+    summary: 
  
   - area: BA Political Science
     institution: Charles University
     icon: ""
     date_start: 2020-09-01
     date_end: 2023-05-31
-    summary: |
+    summary: 
 
 
 work:
@@ -86,7 +86,6 @@ work:
     icon: ''
     date_start: 2025-01-01
     date_end: ''
-    summary: |
 
 
 
