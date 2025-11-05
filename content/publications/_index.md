@@ -1,33 +1,40 @@
 ---
-title: Publications
-cms_exclude: true
+title: "Publications"
+type: landing
+date: 2024-05-19
 
-# Page layout: use sections (blocks)
+design:
+  spacing: '5rem'
+
+# Page sections
 sections:
   - block: collection
     content:
-      title: Published Work
-      text: ''
+      title: "Published Work"
+      text: "Selected peer-reviewed and published papers."
       filters:
         folders:
           - publication
         featured_only: true
     design:
       view: citation
+      template: citation
+      show_date: false
+      show_summary: false
+      show_image: false
 
   - block: collection
     content:
-      title: Work in Progress
-      text: ''
+      title: "Work in Progress"
+      text: "Ongoing projects and drafts in development."
       filters:
         folders:
           - publication
         exclude_featured: true
     design:
       view: citation
-
-# Optional banner
-banner:
-  caption: ''
-  image: ''
+      template: citation
+      show_date: false
+      show_summary: false
+      show_image: false
 ---
