@@ -14,7 +14,7 @@ last_name: Jaburek
 
 # Status emoji
 status:
-  icon: 🚀
+  icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,39 +23,39 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: PhD Student and Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Charles University
+    url: https://ips.fsv.cuni.cz/en
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:stepan.jaburek@fsv.cuni.cz'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
+    url: https://x.com/stepan_jaburek
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
+    url: https://github.com/stepanjaburek
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
+    url: https://www.linkedin.com/in/%C5%A1t%C4%9Bp%C3%A1n-jab%C5%AFrek-278638260/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
+    url: https://scholar.google.com/citations?user=sEcbAPUAAAAJ&hl=en&authuser=2
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0009-0004-3098-1337
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - International Cooperation
+  - Party Politics
+  - Quantiative Political Science
+  - Natural Language Processing
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: PhD International Relations (in progress)
+    institution: Charles University
     icon: ""
     date_start: 2015-09-01
     date_end: 2019-06-30
@@ -64,8 +64,8 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+  - area: MA International Relations
+    institution: Charles University
     icon: ""
     date_start: 2013-09-01
     date_end: 2015-05-31
@@ -73,7 +73,7 @@ education:
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BS Computer Science
+  - area: BA Political Science
     institution: MIT
     icon: ""
     date_start: 2009-09-01
