@@ -35,7 +35,8 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      image: icon.jpg 
+      image: assets/media/icons/custom/icon.png
+      alt: "My Logo"
       text: 'Stepan Jaburek'
 
 # Site footer

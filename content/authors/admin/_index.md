@@ -128,5 +128,5 @@ work:
 
 ---
 
-Hi! My name is Štěpán Jabůrek. I am a PhD student at the Institute of Political Studies at Charles University in Prague and a researcher within Horizon ENSURED.
+Hi! My name is __Stepan Jaburek__. I am a PhD student at the __Institute of Political Studies__ at __Charles University__ in Prague and a researcher within __Horizon ENSURED__.
 My substantive research revolves mainly around international cooperation, party politics, and generally the intersection of domestic and international politics. Methodologically, I am interested in natural language processing and statistics in political research.
