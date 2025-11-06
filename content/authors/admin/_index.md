@@ -86,6 +86,20 @@ work:
     icon: ''
     date_start: 2025-09-01
     date_end: ''
+  
+  - position: Research Assistant
+    company_name: Charles University
+    company_url: 'https://ips.fsv.cuni.cz/en'
+    icon: ''
+    date_start: 2024-10-01
+    date_end: 2025-09-01
+
+  - position: Researcher
+    company_name: Ipsos
+    company_url: 'https://www.ipsos.com/cs-cz'
+    icon: ''
+    date_start: 2024-02-01
+    date_end: 2025-09-01  
 
 
 
