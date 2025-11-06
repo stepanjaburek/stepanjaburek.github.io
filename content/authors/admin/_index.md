@@ -61,6 +61,13 @@ education:
     date_end: 2029-06-30
     summary: 
 
+  - area: Exchange Political Science
+    institution: University of Copenhagen
+    icon: ""
+    date_start: 2025-01-01
+    date_end: 2025-07-31
+    summary:     
+
 #    button:
  #     text: 'Read Thesis'
   #    url: 'https://example.com/thesis.pdf'
