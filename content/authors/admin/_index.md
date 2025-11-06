@@ -54,7 +54,7 @@ interests:
   - Natural Language Processing
 
 education:
-  - area: PhD International Relations (in progress)
+  - area: PhD International Relations    (in progress)
     institution: Charles University
     icon: ""
     date_start: 2025-09-01
