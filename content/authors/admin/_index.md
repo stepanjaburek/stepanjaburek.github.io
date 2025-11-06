@@ -50,7 +50,7 @@ profiles:
 interests:
   - International Cooperation
   - Party Politics
-  - Quantiative Political Science
+  - Quantitative Methods
   - Natural Language Processing
 
 education:
