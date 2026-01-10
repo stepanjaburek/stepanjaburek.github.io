@@ -130,7 +130,10 @@ work:
 
 Hi! My name is __Stepan Jaburek__. I am a PhD student at the __Institute of Political Studies__ at __Charles University__ in Prague and a researcher within __Horizon ENSURED__.
 
-My research focuses mainly on the intersection of international cooperation and domestic politic, particularly:
-- How information flows affect
+My research focuses on the intersection of international cooperation and domestic politic, particularly:
+- How domestic political incentives (such as electoral competition and government-opposition dynamics) affect the prospects of international cooperation
+- How information assymetries and the linguistic complexity of political information undermine cooperation
 
- Methodologically, I am interested in natural language processing and statistical modelling in political research.
+I also cooperate on projects that research the effects of authoritarian legacies on ideological debates, or voter competence
+ 
+ Methodologically, I specialize in quantitative and computational political science, especially Natural Language Processing (NLP) and statistical modelling.
