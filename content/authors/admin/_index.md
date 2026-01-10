@@ -24,11 +24,11 @@ highlight_name: true
 
 # Role/position/tagline
 role: PhD Student and Researcher
-role: Political Science and IR
 
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
+  - name: Political Science and IR
   - name: Charles University 
     url: https://ips.fsv.cuni.cz/en
 
