@@ -1,10 +1,9 @@
 ---
-title: "Working Paper - Parliamentary Discourse about the Left and Right in a Postcommunist Context: The Czech Case"
+title: "Under Review - Political Debates about Ideology under Postcommunism: Salience and Sentiment of the Left and Right in the Czech Parliament, 1993-2023"
 authors:
 - admin 
 - Vojtěch Pohanka
 - Jan Vondráček
-- Tomáš Kremla
 date: "2025-10-07T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
