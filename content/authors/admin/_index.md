@@ -29,7 +29,7 @@ role: Political Science and IR
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Charles University
+  - name: Charles University 
     url: https://ips.fsv.cuni.cz/en
 
 # Social network links
