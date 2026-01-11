@@ -1,7 +1,8 @@
 ---
-title: "Working paper - Moderating Criticism of the EU While in Government? New Evidence on The Party Politics of European Integration in Czech Parliamentary Debates"
+title: "Working paper - Government-Opposition Dynamics of IO Scapegoating: Evidence from European National Parliamentary Debates, 1997-2020"
 authors:
 - admin
+- Michal Parizek
 date: "2025-04-07T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
@@ -23,7 +24,7 @@ summary:
 
 tags:
 - Parliamentary Speeches
-- EU
+- IOs
 - NLP
 
 
@@ -37,8 +38,8 @@ links:
 #- type: preprint
   #provider: arxiv
   #id: 1512.04133v1
-- type: code
-  url: https://github.com/stepanjaburek/EU_Working_Paper/tree/main/R
+- #type: code
+  #url: https://github.com/stepanjaburek/EU_Working_Paper/tree/main/R
 
 
 # Featured image

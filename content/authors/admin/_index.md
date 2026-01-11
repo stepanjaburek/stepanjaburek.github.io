@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Stepan Jaburek
+title: Štěpán Jabůrek
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Stepan
-last_name: Jaburek
+first_name: Štěpán
+last_name: Jabůrek
 
 # Pronouns (optional)
 #pronouns: he/him
@@ -130,7 +130,7 @@ work:
 
 ---
 
-Hi! My name is __Stepan Jaburek__. I am a PhD student at the __Institute of Political Studies__ at __Charles University__ in Prague and a researcher within __Horizon ENSURED__.
+Hi! My name is __Štěpán Jabůrek__. I am a PhD student at the __Institute of Political Studies__ at __Charles University__ in Prague and a researcher within __Horizon ENSURED__.
 
 My research focuses on the intersection of international cooperation and domestic politics, particularly:
 - How domestic political incentives (such as electoral competition and government-opposition dynamics) affect the prospects of international cooperation.

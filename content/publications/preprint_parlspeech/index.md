@@ -1,7 +1,10 @@
 ---
-title: "Working paper - Moderating Criticism of the EU While in Government? New Evidence on The Party Politics of European Integration in Czech Parliamentary Debates"
+title: "Dataset - Machine Translated ParlSpeech V2 Dataset: Full-text corpora of 3.5 million parliamentary speeches from 7 countries translated into English using open-source machine translation"
 authors:
 - admin
+- Adam Černý
+- Christian Rauh
+- Jan Schwalbach
 date: "2025-04-07T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
@@ -10,7 +13,7 @@ publishDate: "2017-01-01T00:00:00Z"
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["dataset"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
@@ -23,7 +26,6 @@ summary:
 
 tags:
 - Parliamentary Speeches
-- EU
 - NLP
 
 
@@ -37,8 +39,8 @@ links:
 #- type: preprint
   #provider: arxiv
   #id: 1512.04133v1
-- type: code
-  url: https://github.com/stepanjaburek/EU_Working_Paper/tree/main/R
+- #type: code
+  #url: https://github.com/stepanjaburek/EU_Working_Paper/tree/main/R
 
 
 # Featured image
