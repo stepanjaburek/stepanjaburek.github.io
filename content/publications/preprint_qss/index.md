@@ -1,5 +1,5 @@
 ---
-title: "<strong>Working paper</strong> - Conceptual Review of Quantum Social Science: Familiar Old Wine in New Bottles?"
+title: "Working Paper: Conceptual Review of Quantum Social Science: Familiar Old Wine in New Bottles?"
 authors:
 - Jakub Tesař
 - Michael Schnabel

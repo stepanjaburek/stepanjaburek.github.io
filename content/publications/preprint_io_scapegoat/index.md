@@ -1,5 +1,5 @@
 ---
-title: "Working paper - Government-Opposition Dynamics of IO Scapegoating: Evidence from European National Parliamentary Debates, 1997-2020"
+title: "Working Paper: Government-Opposition Dynamics of IO Scapegoating: Evidence from European National Parliamentary Debates, 1997-2020"
 authors:
 - admin
 - Michal Parizek

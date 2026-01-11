@@ -1,5 +1,5 @@
 ---
-title: "Working paper - Moderating Criticism of the EU While in Government? New Evidence on The Party Politics of European Integration in Czech Parliamentary Debates"
+title: "Working Paper: Moderating Criticism of the EU While in Government? New Evidence on The Party Politics of European Integration in Czech Parliamentary Debates"
 authors:
 - admin
 date: "2025-04-07T00:00:00Z"
