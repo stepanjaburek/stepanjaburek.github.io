@@ -49,11 +49,11 @@ profiles:
   - icon: academicons/orcid
     url: https://orcid.org/0009-0004-3098-1337
 
-interests:
-  - International Cooperation
-  - Party Politics
-  - Quantitative Methods
-  - Natural Language Processing
+#interests:
+ # - International Cooperation
+  #- Party Politics
+  #- Quantitative Methods
+  #- Natural Language Processing
 
 education:
   - area: PhD International Relations    (in progress)
