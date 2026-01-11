@@ -35,8 +35,8 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      image: /Users/stepanjaburek/Documents/stepanjaburek.github.io/static/uploads/icon.png
-      alt: #"My Logo"
+      image: /uploads/icon.png
+      alt: "Stepan Jaburek"
       text: 'Stepan Jaburek'
 
 # Site footer
