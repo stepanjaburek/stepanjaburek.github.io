@@ -4,7 +4,7 @@ type: landing
 date: 2024-05-19
 
 design:
-  spacing: '2rem'
+  spacing: '6rem'
 
 # Page sections
 sections:
