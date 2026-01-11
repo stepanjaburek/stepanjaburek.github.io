@@ -25,7 +25,7 @@ sections:
   - block: collection
     content:
       title: "Work in Progress"
-      text: "Working papers and drafts in development."
+      text: ""
       filters:
         folders:
           - publications

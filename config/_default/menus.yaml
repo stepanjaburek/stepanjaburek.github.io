@@ -10,10 +10,13 @@ main:
   - name: Experience
     url: experience/   
     weight: 11
-  - name: Papers
+  - name: Research
     url: publications/
     weight: 20
   - name: Projects
     url: projects/
     weight: 30
+  - name: Teaching
+    url: courses/
+    weight: 30 
 
