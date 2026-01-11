@@ -1,7 +1,7 @@
 ---
-title: "Paper Under Review - Political Debates about Ideology under Postcommunism: Salience and Sentiment of the Left and Right in the Czech Parliament, 1993-2023"
+status: "Paper Under Review"
+title: "Political Debates about Ideology under Postcommunism: Salience and Sentiment of the Left and Right in the Czech Parliament, 1993-2023"
 authors:
-- Paper Under Review -
 - admin 
 - Vojtěch Pohanka
 - Jan Vondráček
