@@ -11,7 +11,7 @@ design:
 
 # Page sections
 sections:
-  - block: resume-biography-3
+  - block: 
     content:
       button:
         text: Download CV
