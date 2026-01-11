@@ -1,10 +1,10 @@
 ---
 title: "Dataset - Machine Translated ParlSpeech V2 Dataset: Full-text corpora of 3.5 million parliamentary speeches from 7 countries translated into English using open-source machine translation"
 authors:
-- admin
-- Adam Černý
 - Christian Rauh
 - Jan Schwalbach
+- admin
+- Adam Černý
 date: "2025-04-07T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
@@ -35,11 +35,11 @@ hugoblox:
   ids:
   #  arxiv: 1512.04133v1
 
-links:
+#links:
 #- type: preprint
   #provider: arxiv
   #id: 1512.04133v1
-- #type: code
+ #type: code
   #url: https://github.com/stepanjaburek/EU_Working_Paper/tree/main/R
 
 
