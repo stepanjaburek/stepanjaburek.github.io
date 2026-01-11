@@ -26,7 +26,7 @@ marketing:
     google: ''
     baidu: ''
 
-// filepath: /Users/stepanjaburek/Documents/stepanjaburek.github.io/config/_default/params.yaml
+#// filepath: /Users/stepanjaburek/Documents/stepanjaburek.github.io/config/_default/params.yaml
 #
 # Site header
 header:
