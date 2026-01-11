@@ -21,7 +21,6 @@ sections:
       show_date: false
       show_summary: false
       show_image: false
-
   - block: collection
     content:
       title: "Work in Progress"
