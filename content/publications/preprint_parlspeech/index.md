@@ -1,5 +1,5 @@
 ---
-title: "Dataset: Machine Translated ParlSpeech V2 Dataset: Full-text corpora of 3.5 million parliamentary speeches from 7 countries translated into English using open-source machine translation"
+title: "Dataset. Machine Translated ParlSpeech V2 Dataset: Full-text corpora of 3.5 million parliamentary speeches from 7 countries translated into English using open-source machine translation"
 authors:
 - Christian Rauh
 - Jan Schwalbach
