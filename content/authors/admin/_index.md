@@ -138,4 +138,4 @@ My research focuses on the intersection of international cooperation and domesti
 
 With my co-authors I also work on a series of papers that research the effects of authoritarian legacies on ideological debates and how political elites across Europe view ideology.
  
- Methodologically, I specialize in quantitative and computational political science, especially Natural Language Processing (NLP) and statistical modelling.
+ Methodologically, I specialize in quantitative and computational political science, especially Natural Language Processing (NLP) and statistical modelling (slowly turning bayesian).
