@@ -138,5 +138,3 @@ With my co-authors I also study how authoritarian legacies affect ideological de
 
 Methodologically, I specialize in quantitative political science, especially Natural Language Processing (NLP) and statistical modelling (slowly turning Bayesian).
 
- 
- Methodologically, I specialize in quantitative political science, especially Natural Language Processing (NLP) and statistical modelling (slowly turning bayesian).
