@@ -132,7 +132,7 @@ work:
 
 Hi! My name is __Štěpán Jabůrek__. I am a PhD student at the __Institute of Political Studies__ at __Charles University__ in Prague and a researcher within __Horizon ENSURED__.
 
-In my dissertation, I research how domestic political incentives (electoral competition and government-opposition dynamics) shape elite communication and behavior towards global economic governance and international economic cooperation more broadly.
+In my dissertation, I research how domestic political incentives shape elite communication and behavior towards global economic governance and international economic cooperation more broadly. 
 
 With my co-authors I also study how authoritarian legacies affect ideological debates - specifically, whether "left" and "right" carry (a)symmetric connotations across European political contexts.
 
