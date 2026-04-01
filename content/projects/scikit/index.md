@@ -10,6 +10,6 @@ tags:
   - Markdown
 ---
 
-NLP research group of PhD and MA students from Prague
+NLP research group of PhD students from Prague
 
 <!--more-->
