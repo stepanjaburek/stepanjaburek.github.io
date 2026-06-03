@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Current Projects
-      text: Here is a selection of current projects I am working on.
+      text: Here are some of my current projects I am working on with my co-authors.
       filters:
         folders:
           - projects
