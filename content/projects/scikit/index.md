@@ -4,9 +4,6 @@ date: 2025-10-31
   - type: site
     #url: https://github.com/scikit-learn/scikit-learn
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
 ---
 
 Related works with Vojtěch Pohanka, Jan Vondráček, and Lukas Warode.

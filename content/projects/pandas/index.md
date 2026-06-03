@@ -5,9 +5,6 @@ links:
   - type: site
     url: https://www.ensuredeurope.eu/
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
 ---
 
 Research within the Horizon Europe funded project ENSURED.
