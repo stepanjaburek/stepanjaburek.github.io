@@ -1,8 +1,3 @@
-- role: "Research Assistant"
-  org: "Charles University"
-  years: "Apr 2025 – present"
-  description: "Supervised by Michal Šoltés; GAČR project on the economics of crime."
-
 - role: "Researcher"
   org: "Horizon Europe project ENSURED"
   org_url: "https://ensuredeurope.eu/"
@@ -14,7 +9,12 @@
   years: "Nov 2024 – Sep 2025"
   description: "Supervised by Jakub Tesař and Michael Schnabel (Vanderbilt University); GAČR project on the use of quantum physics concepts in the quantum social science literature."
 
-- role: "Research Executive"
+- role: "Research Assistant"
+  org: "Charles University"
+  years: "Apr 2025 – present"
+  description: "Supervised by Michal Šoltés; GAČR project on the economics of crime."
+
+- role: "Researcher"
   org: "Ipsos"
   years: "Feb 2024 – Sep 2025"
   description: "Market research and public opinion polling."
