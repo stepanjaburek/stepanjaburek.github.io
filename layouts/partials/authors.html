@@ -1,0 +1,5 @@
+{{- $me := "Štěpán Jabůrek" -}}
+{{- range $i, $a := . -}}
+  {{- if $i }}, {{ end -}}
+  {{- if eq $a $me -}}<strong>{{ $a }}</strong>{{- else -}}{{ $a }}{{- end -}}
+{{- end -}}

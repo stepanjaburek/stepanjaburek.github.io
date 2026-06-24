@@ -1,0 +1,51 @@
+baseURL: "https://stepanjaburek.github.io/"
+title: "Štěpán Jabůrek"
+defaultContentLanguage: en
+languages:
+  en:
+    languageCode: en-us
+    languageName: English
+    weight: 1
+enableRobotsTXT: true
+
+params:
+  description: "PhD Student in Political Science and IR at Charles University. I study how domestic political incentives shape elite communication on global economic governance."
+  author: "Štěpán Jabůrek"
+  email: "stepan.jaburek@fsv.cuni.cz"
+  tagline: "I study how domestic political incentives shape elite communication on global economic governance."
+  affiliation: "Institute of Political Studies, Charles University"
+  affiliationURL: "https://ips.fsv.cuni.cz/en"
+  photo: "images/photo.jpg"
+  cv: "files/cv.pdf"
+  social:
+    github: "https://github.com/stepanjaburek"
+    twitter: "https://x.com/stepan_jaburek"
+    scholar: "https://scholar.google.com/citations?user=sEcbAPUAAAAJ&hl=en"
+    linkedin: "https://www.linkedin.com/in/%C5%A1t%C4%9Bp%C3%A1n-jab%C5%AFrek-278638260/"
+    orcid: "https://orcid.org/0009-0004-3098-1337"
+
+menu:
+  main:
+    - name: Research
+      url: "/#research"
+      weight: 10
+    - name: Data
+      url: "/#data"
+      weight: 20
+    - name: Teaching
+      url: "/#teaching"
+      weight: 30
+    - name: Experience
+      url: "/#experience"
+      weight: 40
+    - name: CV
+      url: "/files/cv.pdf"
+      weight: 50
+    - name: Contact
+      url: "/#contact"
+      weight: 60
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

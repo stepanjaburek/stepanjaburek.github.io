@@ -1,0 +1,13 @@
+- title: "Czech Parliamentary Speeches Dataset 2016–2023: Full transcripts of plenary speeches from the Chamber of Deputies"
+  authors: ["Štěpán Jabůrek"]
+  year: 2024
+  venue: "Harvard Dataverse"
+  link: "https://doi.org/10.7910/DVN/FOQUZF"
+  description: "Full-text corpus of plenary speeches from the Czech Chamber of Deputies covering 2016–2023."
+
+- title: "Machine Translated ParlSpeech V2 Dataset: 3.5 million parliamentary speeches from 7 countries translated into English"
+  authors: ["Christian Rauh", "Jan Schwalbach", "Štěpán Jabůrek", "Adam Černý"]
+  year: 2026
+  venue: "in preparation"
+  link: ""
+  description: "Full-text parliamentary corpora translated into English via open-source machine translation."
