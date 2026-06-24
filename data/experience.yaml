@@ -1,18 +1,18 @@
-- role: "Researcher"
+- role: "Junior Researcher"
   org: "Horizon Europe project ENSURED"
   org_url: "https://ensuredeurope.eu/"
-  years: "2024 – present"
+  years: "2025 – present"
   description: "Research on the future of multilateralism and global economic governance."
 
 - role: "Research Assistant"
   org: "Charles University"
   years: "Nov 2024 – Sep 2025"
-  description: "Supervised by Jakub Tesař and Michael Schnabel (Vanderbilt University); GAČR project on the use of quantum physics concepts in the quantum social science literature."
+  description: "Supervised by Jakub Tesař and Michael Schnabel (Vanderbilt University); Czech Science Foundation project on the use of quantum physics concepts in the quantum social science literature."
 
 - role: "Research Assistant"
   org: "Charles University"
   years: "Apr 2025 – present"
-  description: "Supervised by Michal Šoltés; GAČR project on the economics of crime."
+  description: "Supervised by Michal Šoltés at the Department of Economics and Empirical Legal Studies; Czech Science Foundation project on the economics of crime."
 
 - role: "Researcher"
   org: "Ipsos"
