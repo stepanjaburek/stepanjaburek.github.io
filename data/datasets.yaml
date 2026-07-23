@@ -6,7 +6,7 @@
   description: "Full-text corpus of plenary speeches from the Czech Chamber of Deputies covering 2016–2023."
 
 - title: "Machine Translated ParlSpeech V2 Dataset: 3.5 million parliamentary speeches from 7 countries translated into English"
-  authors: ["Christian Rauh", "Jan Schwalbach", "Štěpán Jabůrek", "Adam Černý"]
+  authors: ["Štěpán Jabůrek", "Adam Černý", "Christian Rauh", "Jan Schwalbach"]
   year: 2026
   venue: "in preparation"
   link: ""
