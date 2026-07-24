@@ -13,8 +13,10 @@ Edit `data/papers.yaml` and add an entry:
   venue: ""                  # journal name if published
   link: ""                   # DOI or external URL
   pdf: "files/your-paper.pdf"  # if you upload the PDF below
+  image: "images/papers/your-paper.png" # optional, if you place a thumbnail under static/images/papers/
 ```
 If you have a PDF, drop it into `static/files/` (e.g. `static/files/io-scapegoating-2026.pdf`) and reference it via `pdf: "files/io-scapegoating-2026.pdf"`.
+If you want an image next to the paper, place a square/rectangular thumbnail image in `static/images/papers/` and reference it via `image: "images/papers/your-paper.png"`.
 
 ## Add a dataset
 Edit `data/datasets.yaml`:

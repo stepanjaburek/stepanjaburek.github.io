@@ -12,20 +12,27 @@
       <h2 class="subsection-title">Publications</h2>
       <div class="papers-list">
         {{ range . }}
-          <div class="paper">
-            <h3 class="paper-title">
-              {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
-            </h3>
-            <div class="paper-meta">
-              {{ partial "authors.html" .authors }} &middot; {{ with .venue }}<em>{{ . }}</em> &middot; {{ end }}{{ .year }}
-              {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
-            </div>
-            {{ if or .pdf .link }}
-              <div class="paper-links">
-                {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
-                {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+          <div class="paper {{ if .image }}has-image{{ end }}">
+            {{ if .image }}
+              <div class="paper-image">
+                <img src="{{ .image | relURL }}" alt="Paper thumbnail" loading="lazy">
               </div>
             {{ end }}
+            <div class="paper-content">
+              <h3 class="paper-title">
+                {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+              </h3>
+              <div class="paper-meta">
+                {{ partial "authors.html" .authors }} &middot; {{ with .venue }}<em>{{ . }}</em> &middot; {{ end }}{{ .year }}
+                {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+              </div>
+              {{ if or .pdf .link }}
+                <div class="paper-links">
+                  {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                  {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+                </div>
+              {{ end }}
+            </div>
           </div>
         {{ end }}
       </div>
@@ -60,17 +67,24 @@
       
       {{ with $jmp }}
         {{ range . }}
-          <div class="jmp-card">
-            <span class="jmp-badge">Job Market Paper</span>
-            <h3 class="paper-title">{{ .title }}</h3>
-            <div class="paper-meta">
-              {{ partial "authors.html" .authors }} &middot; {{ .year }}
-              {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
-            </div>
-            {{ with .abstract }}<p class="paper-abstract">{{ . }}</p>{{ end }}
-            <div class="paper-links">
-              {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
-              {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">DOI / Publisher Page</a>{{ end }}
+          <div class="jmp-card {{ if .image }}has-image{{ end }}">
+            {{ if .image }}
+              <div class="jmp-image">
+                <img src="{{ .image | relURL }}" alt="JMP thumbnail" loading="lazy">
+              </div>
+            {{ end }}
+            <div class="jmp-content">
+              <span class="jmp-badge">Job Market Paper</span>
+              <h3 class="paper-title">{{ .title }}</h3>
+              <div class="paper-meta">
+                {{ partial "authors.html" .authors }} &middot; {{ .year }}
+                {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+              </div>
+              {{ with .abstract }}<p class="paper-abstract">{{ . }}</p>{{ end }}
+              <div class="paper-links">
+                {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">DOI / Publisher Page</a>{{ end }}
+              </div>
             </div>
           </div>
         {{ end }}
@@ -79,20 +93,27 @@
       {{ with $wp }}
         <div class="papers-list">
           {{ range . }}
-            <div class="paper">
-              <h3 class="paper-title">
-                {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
-              </h3>
-              <div class="paper-meta">
-                {{ partial "authors.html" .authors }} &middot; {{ .year }}
-                {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
-              </div>
-              {{ if or .pdf .link }}
-                <div class="paper-links">
-                  {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
-                  {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+            <div class="paper {{ if .image }}has-image{{ end }}">
+              {{ if .image }}
+                <div class="paper-image">
+                  <img src="{{ .image | relURL }}" alt="Paper thumbnail" loading="lazy">
                 </div>
               {{ end }}
+              <div class="paper-content">
+                <h3 class="paper-title">
+                  {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+                </h3>
+                <div class="paper-meta">
+                  {{ partial "authors.html" .authors }} &middot; {{ .year }}
+                  {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+                </div>
+                {{ if or .pdf .link }}
+                  <div class="paper-links">
+                    {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                    {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+                  </div>
+                {{ end }}
+              </div>
             </div>
           {{ end }}
         </div>
