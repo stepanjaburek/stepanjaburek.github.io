@@ -13,8 +13,8 @@ params:
   author: "Štěpán Jabůrek"
   email: "stepan.jaburek@fsv.cuni.cz"
   tagline: "PhD Student in International Relations"
-  affiliation: "Institute of Political Studies, Charles University"
-  affiliationURL: "https://ips.fsv.cuni.cz/en"
+  affiliation: "Charles University"
+  affiliationURL: "https://cuni.cz/UKEN-1.html"
   photo: "images/photo.jpg"
   cv: "files/cv.pdf"
   social:
