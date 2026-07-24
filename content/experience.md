@@ -1,4 +1,4 @@
 ---
 title: "Experience"
-layout: "experience"
+type: "experience"
 ---

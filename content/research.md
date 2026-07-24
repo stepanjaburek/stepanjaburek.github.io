@@ -1,4 +1,4 @@
 ---
 title: "Research"
-layout: "research"
+type: "research"
 ---

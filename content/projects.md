@@ -1,4 +1,4 @@
 ---
 title: "Projects"
-layout: "projects"
+type: "projects"
 ---
