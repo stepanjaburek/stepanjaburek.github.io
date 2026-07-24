@@ -5,14 +5,7 @@
   status: "under review"
   link: ""
   pdf: ""
-
-- title: "Variation in Ideological Speech across Parliaments: Examining the Asymmetric Effects of Political Contexts & Legacies"
-  authors: ["Lukas Warode", "Štěpán Jabůrek", "Vojtěch Pohanka", "Jan Vondráček"]
-  year: 2026
-  kind: working_paper
-  status: "working paper"
-  link: ""
-  pdf: ""
+  image: "static/images/ideology.jpeg"
 
 - title: "Government-Opposition Dynamics of IO Scapegoating: Evidence from European National Parliamentary Debates, 1997–2020"
   authors: ["Štěpán Jabůrek", "Michal Parizek"]
@@ -21,6 +14,25 @@
   status: "working paper"
   link: ""
   pdf: ""
+  image: "static/images/ios.png"
+
+ - title: "Practically Equivalent? Testing the Stability of Inferences in Machine-Translated Political Speech"
+  authors: ["Štěpán Jabůrek", "Lukas Warode", "Adam Černý"]
+  year: 2026
+  kind: working_paper
+  status: "working paper"
+  link: ""
+  pdf: ""
+  image: "static/images/transl.png" 
+
+- title: "Variation in Ideological Speech across Parliaments: Examining the Asymmetric Effects of Political Contexts & Legacies"
+  authors: ["Lukas Warode", "Štěpán Jabůrek", "Vojtěch Pohanka", "Jan Vondráček"]
+  year: 2026
+  kind: working_paper
+  status: "working paper"
+  link: ""
+  pdf: ""
+  image: ""
 
 - title: "Conceptual Review of Quantum Social Science: Familiar Old Wine in New Bottles?"
   authors: ["Jakub Tesař", "Michael Schnabel", "Štěpán Jabůrek"]
@@ -29,3 +41,4 @@
   status: "working paper"
   link: ""
   pdf: ""
+  image: "static/images/qss.png"
