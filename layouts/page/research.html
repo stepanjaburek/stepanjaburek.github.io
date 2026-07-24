@@ -1,0 +1,104 @@
+{{ define "main" }}
+{{ $papers := hugo.Data.papers }}
+{{ $datasets := hugo.Data.datasets }}
+
+<section class="page-content research-page">
+  <h1 class="page-title">Research</h1>
+  
+  <!-- 1. Publications -->
+  {{ with $papers }}
+    {{ $pubs := where (where . "job_market_paper" "ne" true) "kind" "published" }}
+    {{ with $pubs }}
+      <h2 class="subsection-title">Publications</h2>
+      <div class="papers-list">
+        {{ range . }}
+          <div class="paper">
+            <h3 class="paper-title">
+              {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+            </h3>
+            <div class="paper-meta">
+              {{ partial "authors.html" .authors }} &middot; {{ with .venue }}<em>{{ . }}</em> &middot; {{ end }}{{ .year }}
+              {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+            </div>
+            {{ if or .pdf .link }}
+              <div class="paper-links">
+                {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <!-- 2. Published Data -->
+  {{ with $datasets }}
+    <h2 class="subsection-title">Published Data</h2>
+    <div class="datasets-list">
+      {{ range . }}
+        <div class="data-item">
+          <h3 class="data-title">
+            {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+          </h3>
+          <div class="data-meta">
+            {{ partial "authors.html" .authors }} &middot; {{ with .venue }}<em>{{ . }}</em> &middot; {{ end }}{{ .year }}
+          </div>
+          {{ with .description }}<p class="data-desc">{{ . }}</p>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <!-- 3. Working Papers -->
+  {{ with $papers }}
+    {{ $jmp := where . "job_market_paper" true }}
+    {{ $wp := where (where . "job_market_paper" "ne" true) "kind" "working_paper" }}
+    
+    {{ if or $jmp $wp }}
+      <h2 class="subsection-title">Working Papers</h2>
+      
+      {{ with $jmp }}
+        {{ range . }}
+          <div class="jmp-card">
+            <span class="jmp-badge">Job Market Paper</span>
+            <h3 class="paper-title">{{ .title }}</h3>
+            <div class="paper-meta">
+              {{ partial "authors.html" .authors }} &middot; {{ .year }}
+              {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+            </div>
+            {{ with .abstract }}<p class="paper-abstract">{{ . }}</p>{{ end }}
+            <div class="paper-links">
+              {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+              {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">DOI / Publisher Page</a>{{ end }}
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+
+      {{ with $wp }}
+        <div class="papers-list">
+          {{ range . }}
+            <div class="paper">
+              <h3 class="paper-title">
+                {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+              </h3>
+              <div class="paper-meta">
+                {{ partial "authors.html" .authors }} &middot; {{ .year }}
+                {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+              </div>
+              {{ if or .pdf .link }}
+                <div class="paper-links">
+                  {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                  {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+</section>
+{{ end }}

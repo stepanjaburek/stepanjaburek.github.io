@@ -27,23 +27,20 @@ params:
 menu:
   main:
     - name: Research
-      url: "/#research"
+      url: "/research/"
       weight: 10
-    - name: Data
-      url: "/#data"
+    - name: Projects
+      url: "/projects/"
       weight: 20
     - name: Experience
-      url: "/#experience"
+      url: "/experience/"
       weight: 30
     - name: Teaching
-      url: "/#teaching"
+      url: "/teaching/"
       weight: 40
     - name: CV
       url: "/files/cv.pdf"
       weight: 50
-    - name: Contact
-      url: "/#contact"
-      weight: 60
 
 markup:
   goldmark:

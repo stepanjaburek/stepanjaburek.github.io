@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ $projects := hugo.Data.projects }}
+
+<section class="page-content projects-page">
+  <h1 class="page-title">Projects</h1>
+  
+  {{ with $projects }}
+    <div class="projects-list">
+      {{ range . }}
+        <div class="project-item">
+          <h2 class="project-name">
+            {{ if .url }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+          </h2>
+          {{ with .description }}<p class="project-desc">{{ . }}</p>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p>No projects listed at the moment.</p>
+  {{ end }}
+</section>
+{{ end }}
