@@ -81,7 +81,7 @@
             </div>
             {{ if .image }}
               <div class="paper-image">
-                <img src="{{ .image | relURL }}" alt="Paper thumbnail" loading="lazy">
+                <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="Paper thumbnail" loading="lazy">
               </div>
             {{ end }}
           </div>
@@ -107,7 +107,7 @@
           </div>
           {{ if .image }}
             <div class="paper-image">
-              <img src="{{ .image | relURL }}" alt="Dataset thumbnail" loading="lazy">
+              <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="Dataset thumbnail" loading="lazy">
             </div>
           {{ end }}
         </div>
@@ -141,7 +141,7 @@
             </div>
             {{ if .image }}
               <div class="jmp-image">
-                <img src="{{ .image | relURL }}" alt="JMP thumbnail" loading="lazy">
+                <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="JMP thumbnail" loading="lazy">
               </div>
             {{ end }}
           </div>
@@ -169,7 +169,7 @@
               </div>
               {{ if .image }}
                 <div class="paper-image">
-                  <img src="{{ .image | relURL }}" alt="Paper thumbnail" loading="lazy">
+                  <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="Paper thumbnail" loading="lazy">
                 </div>
               {{ end }}
             </div>

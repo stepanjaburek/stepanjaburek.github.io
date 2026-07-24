@@ -456,7 +456,7 @@ p {
 }
 .jmp-image {
   flex-shrink: 0;
-  width: 110px;
+  width: 150px;
   margin-top: 0.25rem;
 }
 .jmp-image img {
@@ -518,7 +518,7 @@ p {
 }
 .paper-image {
   flex-shrink: 0;
-  width: 90px;
+  width: 150px;
   margin-top: 0.25rem;
 }
 .paper-image img {
