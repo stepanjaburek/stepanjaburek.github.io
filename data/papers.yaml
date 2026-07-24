@@ -16,7 +16,7 @@
   pdf: ""
   image: "static/images/ios.png"
 
- - title: "Practically Equivalent? Testing the Stability of Inferences in Machine-Translated Political Speech"
+- title: "Practically Equivalent? Testing the Stability of Inferences in Machine-Translated Political Speech"
   authors: ["Štěpán Jabůrek", "Lukas Warode", "Adam Černý"]
   year: 2026
   kind: working_paper
