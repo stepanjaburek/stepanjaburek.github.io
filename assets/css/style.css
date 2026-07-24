@@ -1,6 +1,6 @@
 :root {
-  --font-serif: 'EB Garamond', Georgia, serif;
-  --font-mono: 'JetBrains Mono', Courier, monospace;
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
 }
 
 /* Default Light (Parchment Paper) Theme */
@@ -44,7 +44,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-serif);
   font-size: 1.15rem;
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -90,9 +90,10 @@ a:visited {
   top: 0;
   z-index: 100;
   background-color: var(--color-bg);
+  border-top: 5px solid var(--color-accent);
   border-bottom: 3px double var(--color-border);
-  padding: 1rem 1.5rem;
-  transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
+  padding: 0.8rem 1.5rem 1rem;
+  transition: background-color 0.3s ease, border-bottom-color 0.3s ease, border-top-color 0.3s ease;
 }
 .nav-inner {
   max-width: 780px;
@@ -102,16 +103,15 @@ a:visited {
   justify-content: space-between;
   gap: 1.5rem;
 }
-.nav-brand {
+.nav-brand,
+.nav-brand:visited,
+.nav-brand:hover,
+.nav-brand:active {
   font-weight: 700;
   font-size: 1.35rem;
   color: var(--color-text);
   text-decoration: none;
   font-family: var(--font-serif);
-}
-.nav-brand:hover {
-  color: var(--color-accent);
-  text-decoration: none;
 }
 
 .nav-actions {
