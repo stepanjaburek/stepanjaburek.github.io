@@ -1,7 +1,7 @@
 # R Packages
 r_packages:
-  - name: "_bayeswatch_"
-    description: "A vibecoded R package wrapping MCMC visualizations on Bayesian models in _brms_ and _rethinking_."
+  - name: "*bayeswatch*"
+    description: "A vibecoded R package wrapping MCMC visualizations on Bayesian models in *brms* and *rethinking*."
     link: "https://github.com/stepanjaburek/bayeswatch"
     image: "images/logo_lobster.png"
 
