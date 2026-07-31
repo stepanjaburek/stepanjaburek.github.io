@@ -29,13 +29,21 @@ Edit `data/datasets.yaml`:
   description: "One-sentence description."
 ```
 
-## Add a teaching entry
-Edit `data/teaching.yaml`:
+## Add an "Other stuff" entry (R Packages or Web Apps)
+Edit `data/other.yaml`:
 ```yaml
-- course: "Course Name"
-  role: "Co-Lecturer (40%)"
-  institution: "Charles University"
-  term: "Spring 2026"
+# Under r_packages to add an R Package:
+r_packages:
+  - name: "packageName"
+    description: "Brief description of the R package."
+    link: "https://github.com/..."
+
+# Under web_apps to add a Web Application:
+web_apps:
+  - name: "App Name"
+    description: "Brief description of the dashboard."
+    link: "https://..."
+    image: "images/app.png" # Optional: screenshot under static/images/
 ```
 
 ## Update bio / homepage prose

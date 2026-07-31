@@ -1,0 +1,12 @@
+# R Packages
+r_packages:
+  - name: "parlSpeech"
+    description: "An R package to download, parse, and analyze European parliamentary speech transcripts."
+    link: "https://github.com/stepanjaburek/parlSpeech"
+
+# Web Applications
+web_apps:
+  - name: "Czech Parliamentary Debates Explorer"
+    description: "An interactive Shiny application designed to search, filter, and analyze debates in the Czech Chamber of Deputies."
+    link: "https://stepanjaburek.shinyapps.io/czech-parliament-explorer"
+    image: "images/ideology.jpeg"
