@@ -3,10 +3,11 @@ r_packages:
   - name: "_bayeswatch_"
     description: "A vibecoded R package wrapping MCMC visualizations on Bayesian models in _brms_ and _rethinking_."
     link: "https://github.com/stepanjaburek/bayeswatch"
+    image: "images/logo_lobster.png"
 
 # Web Applications
 web_apps:
   - name: "Citation Leaderboard of the Faculty of Social Sciences, Charles University"
     description: "Web app tracking citation counts of FSV UK faculty on Google Scholar and Web of Science."
     link: "https://stepanjaburek.shinyapps.io/fsv-leaderboard/"
-    image: "images/ideology.jpeg"
+    image: "images/fsv.png"
