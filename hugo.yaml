@@ -35,7 +35,7 @@ menu:
     - name: Experience
       url: "/experience/"
       weight: 30
-    - name: Teaching
+    - name: Other Stuff
       url: "/teaching/"
       weight: 40
     - name: CV
