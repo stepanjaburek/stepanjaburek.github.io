@@ -1,12 +1,12 @@
 # R Packages
 r_packages:
-  - name: "parlSpeech"
-    description: "An R package to download, parse, and analyze European parliamentary speech transcripts."
-    link: "https://github.com/stepanjaburek/parlSpeech"
+  - name: "\textit{bayeswatch}"
+    description: "An R package wrapping MCMC visualizations on Bayesian models in \textit{brms} and \textit{rethinking}."
+    link: "https://github.com/stepanjaburek/bayeswatch"
 
 # Web Applications
 web_apps:
-  - name: "Czech Parliamentary Debates Explorer"
-    description: "An interactive Shiny application designed to search, filter, and analyze debates in the Czech Chamber of Deputies."
-    link: "https://stepanjaburek.shinyapps.io/czech-parliament-explorer"
+  - name: "Citation Leaderboard of the Faculty of Social Sciences, Charles University"
+    description: "Web app tracking citation counts of FSV UK faculty on Google Scholar and Web of Science."
+    link: "https://stepanjaburek.shinyapps.io/fsv-leaderboard/"
     image: "images/ideology.jpeg"
