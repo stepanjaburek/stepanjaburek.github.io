@@ -16,7 +16,7 @@
   pdf: ""
   image: "images/ios.png"
 
-- title: "Practically Equivalent? Testing the Stability of Inferences in Machine-Translated Political Speech"
+- title: "Beyond Reliability: A Bayesian Framework for Practical Equivalence in Machine-Translated Political Text"
   authors: ["Štěpán Jabůrek", "Lukas Warode", "Adam Černý"]
   year: 2026
   kind: working_paper
