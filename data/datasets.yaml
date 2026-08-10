@@ -6,7 +6,7 @@
   description: ""
 
 - title: "Machine-translated ParlSpeech V2 dataset: Full-text corpora of 3.5 million parliamentary speeches from seven countries translated into English"
-  authors: ["Štěpán Jabůrek", "Adam Černý", "Christian Rauh", "Jan Schwalbach"]
+  authors: ["Štěpán Jabůrek", "Adam Černý", "[Christian Rauh](https://christian-rauh.eu/)", "Jan Schwalbach"]
   year: 2026
   venue: "in preparation"
   link: ""
