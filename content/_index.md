@@ -2,11 +2,11 @@
 title: "Štěpán Jabůrek"
 ---
 
-Hi! I am a first-year PhD student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/en) at [Charles University](https://cuni.cz/UKEN-1.html), Prague. 
+I am a first-year PhD student at the [Institute of Political Studies](https://ips.fsv.cuni.cz/en) at [Charles University](https://cuni.cz/UKEN-1.html), Prague. 
 
-I generally specialize in Computational Political Science and apply NLP and (Bayesian) statistical modelling to topics in international cooperation and political behavior. 
+In my dissertation, I research the interaction of economic globalization with domestic politics and elite communication about global governance. With my co-authors, I also research novel approaches to measuring elite politicial ideology
 
-In my dissertation, I research elite political communication about international economic cooperation and the interaction of economic globalization and party politics. With my co-authors, I also research novel approaches to measuring elite politicial ideology.
+More generally, I specialize in Computational Political Science and apply NLP and (Bayesian) statistical modelling to study various topics at the intersection of international and domestic politics.
 
 
 
