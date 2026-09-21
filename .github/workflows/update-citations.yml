@@ -1,0 +1,92 @@
+name: Update Citations
+
+on:
+  schedule:
+    # Runs automatically every Monday at 04:00 UTC
+    - cron: '0 4 * * 1'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-citations
+  cancel-in-progress: true
+
+jobs:
+  fetch-citations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install R dependencies
+        run: |
+          Rscript -e 'install.packages(c("rvest", "jsonlite", "remotes"))'
+          Rscript -e 'remotes::install_github("frbcesab/rwosstarter")'
+
+      - name: Fetch citation statistics
+        env:
+          WOS_STARTER_KEY: ${{ secrets.WOS_STARTER_KEY }}
+        run: |
+          Rscript -e '
+            suppressPackageStartupMessages({
+              library(rvest)
+              library(jsonlite)
+            })
+
+            # 1. Web of Science (via ORCID / ResearcherID)
+            wos <- list(citations = 0, h_index = 0, papers = 0)
+            wos_key <- Sys.getenv("WOS_STARTER_KEY")
+            if (nzchar(wos_key) && requireNamespace("rwosstarter", quietly = TRUE)) {
+              Sys.setenv(WOS_STARTER_KEY = wos_key)
+              tryCatch({
+                records <- rwosstarter::wos_get_records("AI=\"0009-0004-3098-1337\"")
+                if (!is.null(records) && nrow(records) > 0) {
+                  cits <- sort(records$citations, decreasing = TRUE)
+                  wos <- list(
+                    citations = sum(cits, na.rm = TRUE),
+                    h_index   = sum(cits >= seq_along(cits)),
+                    papers    = nrow(records)
+                  )
+                }
+              }, error = function(e) message("WoS note: ", conditionMessage(e)))
+            }
+
+            # 2. Google Scholar
+            options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
+            scholar_url <- "https://scholar.google.com/citations?user=sEcbAPUAAAAJ&hl=en&pagesize=100"
+            doc <- read_html(scholar_url)
+            stats <- as.integer(html_text(html_elements(doc, ".gsc_rsb_std")))
+            scholar <- list(
+              citations = stats[1],
+              h_index   = stats[3],
+              i10_index = stats[5],
+              papers    = length(html_elements(doc, ".gsc_a_tr"))
+            )
+
+            # Combined output
+            out <- list(
+              updated_at = as.character(Sys.Date()),
+              scholar    = scholar,
+              wos        = wos
+            )
+
+            # Save to data/ (Hugo data template) and static/ (public file)
+            dir.create("data", showWarnings = FALSE)
+            dir.create("static", showWarnings = FALSE)
+            write_json(out, "data/citations.json", pretty = TRUE, auto_unbox = TRUE)
+            write_json(out, "static/citations.json", pretty = TRUE, auto_unbox = TRUE)
+            message("Citations updated successfully:")
+            print(toJSON(out, pretty = TRUE, auto_unbox = TRUE))
+          '
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/citations.json static/citations.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(citations): update stats" && git push)
