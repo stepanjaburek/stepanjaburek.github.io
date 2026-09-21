@@ -128,5 +128,30 @@
     {{ end }}
   {{ end }}
 
+  <!-- 4. Citation Counts -->
+  {{ with hugo.Data.citations }}
+    <div class="citations-block">
+      <h2 class="subsection-title">Citations</h2>
+      <div class="citations-content">
+        <div class="citation-pill">
+          <span class="citation-source">Google Scholar</span>
+          <a class="citation-stat" href="https://scholar.google.com/citations?user=sEcbAPUAAAAJ&hl=en" target="_blank" rel="noopener">
+            <strong>{{ .scholar.citations }}</strong> citations <span class="citation-detail">(h-index: {{ .scholar.h_index }})</span>
+          </a>
+        </div>
+        <div class="citation-pill">
+          <span class="citation-source">Web of Science</span>
+          <a class="citation-stat" href="https://orcid.org/0009-0004-3098-1337" target="_blank" rel="noopener">
+            <strong>{{ .wos.citations }}</strong> citations <span class="citation-detail">(h-index: {{ .wos.h_index }})</span>
+          </a>
+        </div>
+      </div>
+      {{ with .updated_at }}
+        <p class="citation-updated">Last refreshed: {{ . }}</p>
+      {{ end }}
+    </div>
+  {{ end }}
+
 </section>
 {{ end }}
+

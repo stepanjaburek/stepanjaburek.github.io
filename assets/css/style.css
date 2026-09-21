@@ -676,8 +676,63 @@ p {
   text-decoration: underline;
 }
 
+/* Citations Block on Research Page */
+.citations-block {
+  margin-top: 3.5rem;
+}
+.citations-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+.citation-pill {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 0.85rem 1.25rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px var(--color-shadow);
+  min-width: 220px;
+}
+.citation-source {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+.citation-stat {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  text-decoration: none;
+  display: block;
+}
+.citation-stat strong {
+  font-size: 1.35rem;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+.citation-stat:hover strong {
+  color: var(--color-accent-hover);
+}
+.citation-detail {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-left: 0.35rem;
+}
+.citation-updated {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 1rem;
+}
+
 /* Reduced Motion preferences */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
