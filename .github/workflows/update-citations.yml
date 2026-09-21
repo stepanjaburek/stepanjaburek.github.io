@@ -31,6 +31,7 @@ jobs:
       - name: Fetch citation statistics
         env:
           WOS_STARTER_KEY: ${{ secrets.WOS_STARTER_KEY }}
+          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
         run: |
           Rscript -e '
             suppressPackageStartupMessages({
@@ -38,8 +39,19 @@ jobs:
               library(jsonlite)
             })
 
-            # 1. Web of Science (via ORCID / ResearcherID)
-            wos <- list(citations = 0, h_index = 0, papers = 0)
+            # Load existing numbers as fallback so values are never accidentally cleared
+            scholar <- list(citations = 0, h_index = 0, i10_index = 0, papers = 0)
+            wos     <- list(citations = 0, h_index = 0, papers = 0)
+            prev_file <- "data/citations.json"
+            if (file.exists(prev_file)) {
+              tryCatch({
+                prev <- fromJSON(prev_file)
+                if (!is.null(prev$scholar)) scholar <- prev$scholar
+                if (!is.null(prev$wos)) wos <- prev$wos
+              }, error = function(e) NULL)
+            }
+
+            # 1. Web of Science (via ORCID)
             wos_key <- Sys.getenv("WOS_STARTER_KEY")
             if (nzchar(wos_key) && requireNamespace("rwosstarter", quietly = TRUE)) {
               Sys.setenv(WOS_STARTER_KEY = wos_key)
@@ -56,17 +68,28 @@ jobs:
               }, error = function(e) message("WoS note: ", conditionMessage(e)))
             }
 
-            # 2. Google Scholar
+            # 2. Google Scholar (uses ScraperAPI proxy if SCRAPERAPI_KEY secret is set)
             options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
             scholar_url <- "https://scholar.google.com/citations?user=sEcbAPUAAAAJ&hl=en&pagesize=100"
-            doc <- read_html(scholar_url)
-            stats <- as.integer(html_text(html_elements(doc, ".gsc_rsb_std")))
-            scholar <- list(
-              citations = stats[1],
-              h_index   = stats[3],
-              i10_index = stats[5],
-              papers    = length(html_elements(doc, ".gsc_a_tr"))
-            )
+            scraper_key <- Sys.getenv("SCRAPERAPI_KEY")
+            fetch_url <- if (nzchar(scraper_key)) {
+              sprintf("http://api.scraperapi.com?api_key=%s&url=%s", scraper_key, URLencode(scholar_url, reserved = TRUE))
+            } else {
+              scholar_url
+            }
+
+            tryCatch({
+              doc <- read_html(fetch_url)
+              stats <- as.integer(html_text(html_elements(doc, ".gsc_rsb_std")))
+              if (length(stats) >= 5 && !is.na(stats[1])) {
+                scholar <- list(
+                  citations = stats[1],
+                  h_index   = stats[3],
+                  i10_index = stats[5],
+                  papers    = length(html_elements(doc, ".gsc_a_tr"))
+                )
+              }
+            }, error = function(e) message("Scholar note: ", conditionMessage(e)))
 
             # Combined output
             out <- list(
@@ -75,7 +98,7 @@ jobs:
               wos        = wos
             )
 
-            # Save to data/ (Hugo data template) and static/ (public file)
+            # Save to data/ and static/
             dir.create("data", showWarnings = FALSE)
             dir.create("static", showWarnings = FALSE)
             write_json(out, "data/citations.json", pretty = TRUE, auto_unbox = TRUE)
