@@ -12,19 +12,27 @@
       <h2 class="subsection-title">Publications</h2>
       <div class="papers-list">
         {{ range . }}
-          <div class="paper {{ if .image }}has-image{{ end }}">
+          <article class="paper {{ if .image }}has-image{{ end }}">
             <div class="paper-content">
               <h3 class="paper-title">
                 {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
               </h3>
-              <div class="paper-meta">
-                {{ partial "authors.html" .authors }} &middot; {{ with .venue }}<em>{{ . }}</em> &middot; {{ end }}{{ .year }}
-                {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+              <div class="paper-authors">
+                {{ partial "authors.html" .authors }}
               </div>
-              {{ if or .pdf .link }}
+              <div class="paper-meta">
+                {{ with .venue }}<span class="paper-venue"><em>{{ . }}</em></span> &middot; {{ end }}<span class="paper-year">{{ .year }}</span>
+                {{ with .status }}<span class="status">{{ . }}</span>{{ end }}
+              </div>
+              {{ with .abstract }}
+                <p class="paper-abstract">{{ . }}</p>
+              {{ end }}
+              {{ if or .pdf .link .doi .code }}
                 <div class="paper-links">
-                  {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
-                  {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+                  {{ with .pdf }}<a class="paper-btn" href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                  {{ with .link }}<a class="paper-btn" href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+                  {{ with .doi }}<a class="paper-btn" href="{{ . }}" rel="noopener" target="_blank">DOI</a>{{ end }}
+                  {{ with .code }}<a class="paper-btn" href="{{ . }}" rel="noopener" target="_blank">Code</a>{{ end }}
                 </div>
               {{ end }}
             </div>
@@ -33,7 +41,7 @@
                 <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="Paper thumbnail" loading="lazy">
               </div>
             {{ end }}
-          </div>
+          </article>
         {{ end }}
       </div>
     {{ end }}
@@ -44,22 +52,31 @@
     <h2 class="subsection-title">Published Data</h2>
     <div class="datasets-list">
       {{ range . }}
-        <div class="data-item {{ if .image }}has-image{{ end }}">
-          <div class="data-content">
-            <h3 class="data-title">
+        <article class="paper data-item {{ if .image }}has-image{{ end }}">
+          <div class="paper-content data-content">
+            <h3 class="paper-title data-title">
               {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
             </h3>
-            <div class="data-meta">
-              {{ partial "authors.html" .authors }} &middot; {{ with .venue }}<em>{{ . }}</em> &middot; {{ end }}{{ .year }}
+            <div class="paper-authors">
+              {{ partial "authors.html" .authors }}
             </div>
-            {{ with .description }}<p class="data-desc">{{ . }}</p>{{ end }}
+            <div class="paper-meta data-meta">
+              {{ with .venue }}<span class="paper-venue"><em>{{ . }}</em></span> &middot; {{ end }}<span class="paper-year">{{ .year }}</span>
+            </div>
+            {{ with .description }}<p class="paper-desc data-desc">{{ . }}</p>{{ end }}
+            {{ if or .link .pdf .data }}
+              <div class="paper-links">
+                {{ with .link }}<a class="paper-btn" href="{{ . }}" rel="noopener" target="_blank">Dataverse / Link</a>{{ end }}
+                {{ with .pdf }}<a class="paper-btn" href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+              </div>
+            {{ end }}
           </div>
           {{ if .image }}
             <div class="paper-image">
               <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="Dataset thumbnail" loading="lazy">
             </div>
           {{ end }}
-        </div>
+        </article>
       {{ end }}
     </div>
   {{ end }}
@@ -74,18 +91,21 @@
       
       {{ with $jmp }}
         {{ range . }}
-          <div class="jmp-card {{ if .image }}has-image{{ end }}">
+          <article class="jmp-card {{ if .image }}has-image{{ end }}">
             <div class="jmp-content">
               <span class="jmp-badge">Job Market Paper</span>
               <h3 class="paper-title">{{ .title }}</h3>
+              <div class="paper-authors">
+                {{ partial "authors.html" .authors }}
+              </div>
               <div class="paper-meta">
-                {{ partial "authors.html" .authors }} &middot; {{ .year }}
-                {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+                <span class="paper-year">{{ .year }}</span>
+                {{ with .status }}<span class="status">{{ . }}</span>{{ end }}
               </div>
               {{ with .abstract }}<p class="paper-abstract">{{ . }}</p>{{ end }}
               <div class="paper-links">
-                {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
-                {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">DOI / Publisher Page</a>{{ end }}
+                {{ with .pdf }}<a class="paper-btn" href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                {{ with .link }}<a class="paper-btn" href="{{ . }}" rel="noopener" target="_blank">DOI / Publisher Page</a>{{ end }}
               </div>
             </div>
             {{ if .image }}
@@ -93,26 +113,32 @@
                 <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="JMP thumbnail" loading="lazy">
               </div>
             {{ end }}
-          </div>
+          </article>
         {{ end }}
       {{ end }}
 
       {{ with $wp }}
         <div class="papers-list">
           {{ range . }}
-            <div class="paper {{ if .image }}has-image{{ end }}">
+            <article class="paper {{ if .image }}has-image{{ end }}">
               <div class="paper-content">
                 <h3 class="paper-title">
                   {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>{{ else if .pdf }}<a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
                 </h3>
-                <div class="paper-meta">
-                  {{ partial "authors.html" .authors }} &middot; {{ .year }}
-                  {{ with .status }} <span class="status">{{ . }}</span>{{ end }}
+                <div class="paper-authors">
+                  {{ partial "authors.html" .authors }}
                 </div>
+                <div class="paper-meta">
+                  {{ with .venue }}<span class="paper-venue"><em>{{ . }}</em></span> &middot; {{ end }}<span class="paper-year">{{ .year }}</span>
+                  {{ with .status }}<span class="status">{{ . }}</span>{{ end }}
+                </div>
+                {{ with .abstract }}
+                  <p class="paper-abstract">{{ . }}</p>
+                {{ end }}
                 {{ if or .pdf .link }}
                   <div class="paper-links">
-                    {{ with .pdf }}<a href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
-                    {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
+                    {{ with .pdf }}<a class="paper-btn" href="{{ . | relURL }}" target="_blank">PDF</a>{{ end }}
+                    {{ with .link }}<a class="paper-btn" href="{{ . }}" rel="noopener" target="_blank">Link</a>{{ end }}
                   </div>
                 {{ end }}
               </div>
@@ -121,37 +147,12 @@
                   <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="Paper thumbnail" loading="lazy">
                 </div>
               {{ end }}
-            </div>
+            </article>
           {{ end }}
         </div>
       {{ end }}
     {{ end }}
   {{ end }}
 
-  <!-- 4. Citation Counts -->
-  {{ with hugo.Data.citations }}
-    <div class="citations-block">
-      <h2 class="subsection-title">Citations</h2>
-      <div class="citations-content">
-        <div class="citation-pill">
-          <span class="citation-source">Google Scholar</span>
-          <a class="citation-stat" href="https://scholar.google.com/citations?user=sEcbAPUAAAAJ&hl=en" target="_blank" rel="noopener">
-            <strong>{{ .scholar.citations }}</strong> citations <span class="citation-detail">(h-index: {{ .scholar.h_index }})</span>
-          </a>
-        </div>
-        <div class="citation-pill">
-          <span class="citation-source">Web of Science</span>
-          <a class="citation-stat" href="https://orcid.org/0009-0004-3098-1337" target="_blank" rel="noopener">
-            <strong>{{ .wos.citations }}</strong> citations <span class="citation-detail">(h-index: {{ .wos.h_index }})</span>
-          </a>
-        </div>
-      </div>
-      {{ with .updated_at }}
-        <p class="citation-updated">Last refreshed: {{ . }}</p>
-      {{ end }}
-    </div>
-  {{ end }}
-
 </section>
 {{ end }}
-
