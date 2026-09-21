@@ -389,6 +389,12 @@ p {
   width: 14px;
   height: 14px;
 }
+.linkedin-btn svg rect {
+  transition: fill 0.15s ease;
+}
+.linkedin-btn:hover svg rect {
+  fill: #004182;
+}
 .intro-bio {
   border-left: 1px solid var(--color-border);
   padding-left: 3rem;
