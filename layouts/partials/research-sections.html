@@ -2,17 +2,17 @@
 {{- $datasets := default (slice) hugo.Data.datasets -}}
 
 {{- $fields := slice
-  (dict "id" "ipe" "num" "01" "field" "IPE" "title" "IPE")
-  (dict "id" "political-ideology" "num" "02" "field" "Political Ideology" "title" "Political Ideology")
-  (dict "id" "methods" "num" "03" "field" "Methods" "title" "Methods")
-  (dict "id" "science-of-science" "num" "04" "field" "Science of Science" "title" "Science of Science")
-  (dict "id" "data" "num" "05" "field" "Data" "title" "Data")
+  (dict "id" "ir-ipe" "num" "01" "fields" (slice "International Relations/IPE" "IR/IPE" "IPE") "title" "International Relations/IPE")
+  (dict "id" "political-ideology" "num" "02" "fields" (slice "Political Ideology") "title" "Political Ideology")
+  (dict "id" "methods" "num" "03" "fields" (slice "Methods") "title" "Methods")
+  (dict "id" "science-of-science" "num" "04" "fields" (slice "Science of Science") "title" "Science of Science")
+  (dict "id" "data" "num" "05" "fields" (slice "Data") "title" "Data")
 -}}
 
 <div class="imas-research-index">
   {{- range $f := $fields -}}
-    {{- $items := where $papers "field" $f.field -}}
-    {{- if eq $f.field "Data" -}}
+    {{- $items := where $papers "field" "in" $f.fields -}}
+    {{- if eq $f.id "data" -}}
       {{- range $datasets -}}
         {{- $items = $items | append . -}}
       {{- end -}}
@@ -58,7 +58,7 @@
                         <a class="inline-link" href="{{ . | relURL }}" target="_blank">PDF ↗</a>
                       {{- end -}}
                       {{- with .link -}}
-                        <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">{{ if eq $f.field "Data" }}Dataverse / Link ↗{{ else }}Link ↗{{ end }}</a>
+                        <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">{{ if eq $f.id "data" }}Dataverse / Link ↗{{ else }}Link ↗{{ end }}</a>
                       {{- end -}}
                       {{- with .doi -}}
                         <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">DOI ↗</a>

@@ -8,7 +8,7 @@ Edit `data/papers.yaml` and add an entry:
 - title: "Paper Title"
   authors: ["Štěpán Jabůrek", "Coauthor Name"]
   year: 2026
-  field: "IPE"               # IPE | Political Ideology | Methods | Science of Science | Data
+  field: "International Relations/IPE" # International Relations/IPE | Political Ideology | Methods | Science of Science | Data
   status: "WP"               # published | accepted | minor revisions | R&R | WP | preprint
   venue: ""                  # journal or preprint repository name (optional)
   link: ""                   # DOI or external URL (optional)
@@ -19,7 +19,7 @@ Edit `data/papers.yaml` and add an entry:
 If you have a PDF, drop it into `static/files/` (e.g. `static/files/io-scapegoating-2026.pdf`) and reference it via `pdf: "files/io-scapegoating-2026.pdf"`.
 
 ### Contribution fields (`field:`)
-- `"IPE"` — `01 · IPE`
+- `"International Relations/IPE"` (or `"IPE"`) — `01 · International Relations/IPE`
 - `"Political Ideology"` — `02 · Political Ideology`
 - `"Methods"` — `03 · Methods`
 - `"Science of Science"` — `04 · Science of Science`
