@@ -350,9 +350,9 @@ p {
 }
 .profile-tagline {
   color: var(--color-text-muted);
-  font-family: var(--font-serif);
-  font-size: 1.04rem;
-  font-style: italic;
+  font-family: var(--font-sans);
+  font-size: 0.94rem;
+  font-style: normal;
   margin: 0 0 0.35rem;
 }
 .profile-meta {
