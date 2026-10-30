@@ -11,3 +11,9 @@ web_apps:
     description: "Web app tracking citation counts of FSV UK faculty on Google Scholar and Web of Science."
     link: "https://stepanjaburek.shinyapps.io/fsv-leaderboard/"
     image: "images/fsv.png"
+
+web_apps:
+  - name: "Dashboard of Political Science/IR Journal Rankings"
+    description: "Web app tracking WoS and Scopus rankings of Political Science journals allowing quick inspection, comparison of journals, comparison of WoS and Scopus."
+    link: "https://stepanjaburek.shinyapps.io/fsv-journal-explorer/"
+    image: "images/fsv2.png"
