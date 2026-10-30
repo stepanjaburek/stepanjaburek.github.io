@@ -5,15 +5,29 @@
   <h1 class="page-title">Projects</h1>
   
   {{ with $projects }}
-    <div class="projects-list">
-      {{ range . }}
-        <div class="project-item">
-          <h2 class="project-name">
-            {{ if .url }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
-          </h2>
-          {{ with .description }}<p class="project-desc">{{ . }}</p>{{ end }}
+    {{ $count := len . }}
+    <div class="imas-research-index">
+      <div class="minimal-section">
+        <div class="section-head">
+          <h2 class="section-label"><span class="section-num">01</span> &middot; Research Grants &amp; Projects</h2>
+          <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Project{{ else }}Projects{{ end }}</span>
         </div>
-      {{ end }}
+        <div class="writing-list">
+          {{ range . }}
+            <article class="writing-row">
+              <div class="writing-title">
+                {{ if .url }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}
+              </div>
+              {{ with .description }}<p class="project-desc">{{ . }}</p>{{ end }}
+              {{ with .url }}
+                <div class="inline-links-bar">
+                  <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">Project Website ↗</a>
+                </div>
+              {{ end }}
+            </article>
+          {{ end }}
+        </div>
+      </div>
     </div>
   {{ else }}
     <p>No projects listed at the moment.</p>

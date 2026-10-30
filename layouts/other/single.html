@@ -5,53 +5,74 @@
   <h1 class="page-title">Other stuff</h1>
   
   {{ with $other }}
-    <!-- R Packages -->
-    {{ with .r_packages }}
-      <h2 class="subsection-title">R Packages</h2>
-      <div class="projects-list">
-        {{ range . }}
-          <div class="project-item">
-            <h3 class="project-name">
-              {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
-            </h3>
-            <p class="project-desc">{{ .description }}</p>
-            {{ if or .link .cran }}
-              <div class="paper-links">
-                {{ with .link }}<a href="{{ . }}" rel="noopener" target="_blank">GitHub</a>{{ end }}
-                {{ with .cran }}<a href="{{ . }}" rel="noopener" target="_blank">CRAN</a>{{ end }}
-              </div>
-            {{ end }}
+    <div class="imas-research-index">
+      <!-- R Packages -->
+      {{ with .r_packages }}
+        {{ $count := len . }}
+        <div class="minimal-section">
+          <div class="section-head">
+            <h2 class="section-label"><span class="section-num">01</span> &middot; R Packages</h2>
+            <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Package{{ else }}Packages{{ end }}</span>
           </div>
-        {{ end }}
-      </div>
-    {{ end }}
-
-    <!-- Web Applications -->
-    {{ with .web_apps }}
-      <h2 class="subsection-title">Web Applications</h2>
-      <div class="projects-list">
-        {{ range . }}
-          <div class="project-item {{ if .image }}has-image{{ end }}">
-            <div class="project-content">
-              <h3 class="project-name">
-                {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
-              </h3>
-              <p class="project-desc">{{ .description }}</p>
-              {{ with .link }}
-                <div class="paper-links">
-                  <a href="{{ . }}" rel="noopener" target="_blank">Launch App</a>
+          <div class="writing-list">
+            {{ range . }}
+              <article class="writing-row {{ if .image }}project-item has-image{{ end }}">
+                <div class="project-content">
+                  <div class="writing-title">
+                    {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}
+                  </div>
+                  <p class="project-desc">{{ .description }}</p>
+                  {{ if or .link .cran }}
+                    <div class="inline-links-bar">
+                      {{ with .link }}<a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">GitHub ↗</a>{{ end }}
+                      {{ with .cran }}<a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">CRAN ↗</a>{{ end }}
+                    </div>
+                  {{ end }}
                 </div>
-              {{ end }}
-            </div>
-            {{ if .image }}
-              <div class="paper-image">
-                <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="{{ .name }} screenshot" loading="lazy">
-              </div>
+                {{ if .image }}
+                  <div class="paper-image">
+                    <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="{{ .name }} logo" loading="lazy">
+                  </div>
+                {{ end }}
+              </article>
             {{ end }}
           </div>
-        {{ end }}
-      </div>
-    {{ end }}
+        </div>
+      {{ end }}
+
+      <!-- Web Applications -->
+      {{ with .web_apps }}
+        {{ $count := len . }}
+        <div class="minimal-section">
+          <div class="section-head">
+            <h2 class="section-label"><span class="section-num">02</span> &middot; Web Applications</h2>
+            <span class="section-meta">{{ $count }} {{ if eq $count 1 }}App{{ else }}Apps{{ end }}</span>
+          </div>
+          <div class="writing-list">
+            {{ range . }}
+              <article class="writing-row {{ if .image }}project-item has-image{{ end }}">
+                <div class="project-content">
+                  <div class="writing-title">
+                    {{ if .link }}<a href="{{ .link }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}
+                  </div>
+                  <p class="project-desc">{{ .description }}</p>
+                  {{ with .link }}
+                    <div class="inline-links-bar">
+                      <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">Launch App ↗</a>
+                    </div>
+                  {{ end }}
+                </div>
+                {{ if .image }}
+                  <div class="paper-image">
+                    <img src="{{ (strings.TrimPrefix "static/" (strings.TrimPrefix "/static/" .image)) | relURL }}" alt="{{ .name }} screenshot" loading="lazy">
+                  </div>
+                {{ end }}
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
   {{ else }}
     <p>Check back soon for R packages, web applications, and more!</p>
   {{ end }}

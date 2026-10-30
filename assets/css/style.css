@@ -745,6 +745,8 @@ p {
   letter-spacing: 0.08em;
   color: var(--color-text);
   margin: 0;
+  padding: 0;
+  border-bottom: none;
 }
 
 .section-num {
@@ -819,13 +821,15 @@ p {
   line-height: 1.42;
 }
 
-.writing-title a {
+.writing-title a,
+.writing-title a:visited {
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .writing-title a:hover,
+.writing-title a:visited:hover,
 .writing-row:hover .writing-main.has-abstract .writing-title {
   color: var(--color-accent);
   text-decoration: underline;

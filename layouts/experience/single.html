@@ -6,44 +6,64 @@
 <section class="page-content experience-page">
   <h1 class="page-title">Experience &amp; Education</h1>
   
-  {{ with $experience }}
-    <h2 class="subsection-title">Research Experience</h2>
-    <div class="experience-list">
-      {{ range . }}
-        <div class="experience-item">
-          <h3 class="role-title">{{ .role }}</h3>
-          <div class="item-meta">
-            {{ if .org_url }}<a href="{{ .org_url }}" rel="noopener" target="_blank">{{ .org }}</a>{{ else }}{{ .org }}{{ end }}
-            {{ with .years }} &middot; {{ . }}{{ end }}
-          </div>
-          {{ with .description }}<p class="role-desc">{{ . }}</p>{{ end }}
+  <div class="imas-research-index">
+    {{ with $experience }}
+      {{ $count := len . }}
+      <div class="minimal-section">
+        <div class="section-head">
+          <h2 class="section-label"><span class="section-num">01</span> &middot; Research Experience</h2>
+          <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Role{{ else }}Roles{{ end }}</span>
         </div>
-      {{ end }}
-    </div>
-  {{ end }}
+        <div class="writing-list">
+          {{ range . }}
+            <article class="writing-row">
+              <div class="writing-title">{{ .role }}</div>
+              <div class="item-meta">
+                {{ if .org_url }}<a href="{{ .org_url }}" rel="noopener" target="_blank">{{ .org }}</a>{{ else }}{{ .org }}{{ end }}
+                {{ with .years }} &middot; {{ . }}{{ end }}
+              </div>
+              {{ with .description }}<p class="role-desc">{{ . }}</p>{{ end }}
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
 
-  {{ with $education }}
-    <h2 class="subsection-title">Education</h2>
-    <div class="education-list">
-      {{ range . }}
-        <div class="education-item">
-          <h3 class="degree-title">{{ .degree }}</h3>
-          <div class="item-meta">{{ .institution }}{{ with .years }} &middot; {{ . }}{{ end }}</div>
+    {{ with $education }}
+      {{ $count := len . }}
+      <div class="minimal-section">
+        <div class="section-head">
+          <h2 class="section-label"><span class="section-num">02</span> &middot; Education</h2>
+          <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Item{{ else }}Items{{ end }}</span>
         </div>
-      {{ end }}
-    </div>
-  {{ end }}
+        <div class="writing-list">
+          {{ range . }}
+            <article class="writing-row">
+              <div class="writing-title">{{ .degree }}</div>
+              <div class="item-meta">{{ .institution }}{{ with .years }} &middot; {{ . }}{{ end }}</div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
 
-  {{ with $awards }}
-    <h2 class="subsection-title">Awards &amp; Fellowships</h2>
-    <div class="awards-list">
-      {{ range . }}
-        <div class="award-item">
-          <h3 class="award-title">{{ .name }}</h3>
-          <div class="item-meta">{{ .org }} &middot; {{ .year }}</div>
+    {{ with $awards }}
+      {{ $count := len . }}
+      <div class="minimal-section">
+        <div class="section-head">
+          <h2 class="section-label"><span class="section-num">03</span> &middot; Awards &amp; Fellowships</h2>
+          <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Award{{ else }}Awards{{ end }}</span>
         </div>
-      {{ end }}
-    </div>
-  {{ end }}
+        <div class="writing-list">
+          {{ range . }}
+            <article class="writing-row">
+              <div class="writing-title">{{ .name }}</div>
+              <div class="item-meta">{{ .org }} &middot; {{ .year }}</div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
 </section>
 {{ end }}
