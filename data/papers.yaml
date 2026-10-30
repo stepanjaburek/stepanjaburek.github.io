@@ -7,16 +7,25 @@
   pdf: ""
   image: "images/ideology.jpeg"
 
-- title: "Blaming or Defending? Government Membership and Elite Communication about International Organizations"
+- title: "Which Dogs Stop Barking? Government Roles and Partisan Communication about the European Union"
+  authors: ["Štěpán Jabůrek"]
+  year: 2025
+  kind: working_paper
+  status: "working paper"
+  link: ""
+  pdf: ""
+  image: ""
+
+- title: "The Discipline of Office: Government-Opposition Dynamics and the Legitimation of Global Economic Governance"
   authors: ["Štěpán Jabůrek", "Michal Parizek"]
   year: 2026
   kind: working_paper
   status: "working paper"
   link: ""
   pdf: ""
-  image: "images/ios.png"
+  image: "images/ios.png"  
 
-- title: "Beyond Reliability: A Bayesian Framework for Practical Equivalence in Machine-Translated Political Text"
+- title: "Beyond Reliability: Practical Equivalence of Downstream Inferences in Machine-Translated Political Text"
   authors: ["Štěpán Jabůrek", "Lukas Warode", "Adam Černý"]
   year: 2026
   kind: working_paper
@@ -33,6 +42,15 @@
   link: ""
   pdf: ""
   image: ""
+
+- title: "The Bayesian Divide in Political Science"
+  authors: ["Štěpán Jabůrek"]
+  year: 2026
+  kind: working_paper
+  status: "working paper"
+  link: ""
+  pdf: ""
+  image: ""  
 
 - title: "Conceptual Review of Quantum Social Science: Familiar Old Wine in New Bottles?"
   authors: ["Jakub Tesař", "Michael Schnabel", "Štěpán Jabůrek"]
