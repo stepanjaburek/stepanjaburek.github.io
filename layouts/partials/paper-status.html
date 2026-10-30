@@ -1,0 +1,40 @@
+{{- $st := lower (default "wp" .status) -}}
+{{- if or (eq $st "published") (eq $st "published in journal") -}}
+  {{- if .venue -}}
+    <strong><em>{{ .venue }}</em></strong>{{ with .year }}, {{ . }}{{ end }}
+  {{- else -}}
+    <strong>Published</strong>{{ with .year }}, {{ . }}{{ end }}
+  {{- end -}}
+{{- else if eq $st "accepted" -}}
+  {{- if .venue -}}
+    Accepted, <strong><em>{{ .venue }}</em></strong>{{ with .year }} ({{ . }}){{ end }}
+  {{- else -}}
+    <span class="status-label">Accepted</span>{{ with .year }}, {{ . }}{{ end }}
+  {{- end -}}
+{{- else if or (eq $st "minor revisions") (eq $st "minor revision") -}}
+  {{- if .venue -}}
+    Minor Revisions at <strong><em>{{ .venue }}</em></strong>{{ with .year }} ({{ . }}){{ end }}
+  {{- else -}}
+    <span class="status-label">Minor Revisions</span>{{ with .year }}, {{ . }}{{ end }}
+  {{- end -}}
+{{- else if or (eq $st "r&r") (eq $st "revise and resubmit") (eq $st "revise & resubmit") -}}
+  {{- if .venue -}}
+    R&amp;R at <strong><em>{{ .venue }}</em></strong>{{ with .year }} ({{ . }}){{ end }}
+  {{- else -}}
+    <span class="status-label">R&amp;R</span>{{ with .year }}, {{ . }}{{ end }}
+  {{- end -}}
+{{- else if or (eq $st "wp") (eq $st "working paper") -}}
+  {{- if .venue -}}
+    Working Paper, <em>{{ .venue }}</em>{{ with .year }}, {{ . }}{{ end }}
+  {{- else -}}
+    Working Paper{{ with .year }}, {{ . }}{{ end }}
+  {{- end -}}
+{{- else if eq $st "preprint" -}}
+  {{- if .venue -}}
+    Preprint, <em>{{ .venue }}</em>{{ with .year }}, {{ . }}{{ end }}
+  {{- else -}}
+    Preprint{{ with .year }}, {{ . }}{{ end }}
+  {{- end -}}
+{{- else -}}
+  {{ .status }}{{ with .venue }}, <strong><em>{{ . }}</em></strong>{{ end }}{{ with .year }}, {{ . }}{{ end }}
+{{- end -}}

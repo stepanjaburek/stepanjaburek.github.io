@@ -1,0 +1,86 @@
+{{- $papers := default (slice) hugo.Data.papers -}}
+{{- $datasets := default (slice) hugo.Data.datasets -}}
+
+{{- $fields := slice
+  (dict "id" "ipe" "num" "01" "field" "IPE" "title" "IPE")
+  (dict "id" "political-ideology" "num" "02" "field" "Political Ideology" "title" "Political Ideology")
+  (dict "id" "methods" "num" "03" "field" "Methods" "title" "Methods")
+  (dict "id" "science-of-science" "num" "04" "field" "Science of Science" "title" "Science of Science")
+  (dict "id" "data" "num" "05" "field" "Data" "title" "Data")
+-}}
+
+<div class="imas-research-index">
+  {{- range $f := $fields -}}
+    {{- $items := where $papers "field" $f.field -}}
+    {{- if eq $f.field "Data" -}}
+      {{- range $datasets -}}
+        {{- $items = $items | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $count := len $items -}}
+    {{- if gt $count 0 -}}
+      <div class="minimal-section" id="field-{{ $f.id }}">
+        <div class="section-head">
+          <h3 class="section-label"><span class="section-num">{{ $f.num }}</span> &middot; {{ $f.title }}</h3>
+          <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Item{{ else }}Items{{ end }}</span>
+        </div>
+        <div class="writing-table-head research-grid">
+          <div>Title &amp; Materials</div>
+          <div>Co-Authors</div>
+          <div>Publication / Status</div>
+        </div>
+        <div class="writing-list">
+          {{- range $items -}}
+            {{- $summary := default .description .abstract -}}
+            {{- $hasDrawer := ne (default "" $summary) "" -}}
+            {{- $hasLinks := or $hasDrawer .pdf .link .doi .code -}}
+            <article class="writing-row">
+              <div class="writing-main research-grid {{ if $hasDrawer }}has-abstract{{ end }}" {{ if $hasDrawer }}onclick="if(!event.target.closest('a')){this.closest('.writing-row').classList.toggle('expanded');}"{{ end }}>
+                <div class="writing-title-col">
+                  <div class="writing-title">
+                    {{- if .link -}}
+                      <a href="{{ .link }}" rel="noopener" target="_blank">{{ .title }}</a>
+                    {{- else if .pdf -}}
+                      <a href="{{ .pdf | relURL }}" target="_blank">{{ .title }}</a>
+                    {{- else -}}
+                      <span>{{ .title }}</span>
+                    {{- end -}}
+                    {{- if .job_market_paper -}}
+                      <span class="item-badge">Job Market Paper</span>
+                    {{- end -}}
+                  </div>
+                  {{- if $hasLinks -}}
+                    <div class="inline-links-bar">
+                      {{- if $hasDrawer -}}
+                        <button type="button" class="abstract-toggle-btn">[Abstract ▾]</button>
+                      {{- end -}}
+                      {{- with .pdf -}}
+                        <a class="inline-link" href="{{ . | relURL }}" target="_blank">PDF ↗</a>
+                      {{- end -}}
+                      {{- with .link -}}
+                        <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">{{ if eq $f.field "Data" }}Dataverse / Link ↗{{ else }}Link ↗{{ end }}</a>
+                      {{- end -}}
+                      {{- with .doi -}}
+                        <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">DOI ↗</a>
+                      {{- end -}}
+                      {{- with .code -}}
+                        <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">Code ↗</a>
+                      {{- end -}}
+                    </div>
+                  {{- end -}}
+                </div>
+                <div class="writing-authors">{{ partial "coauthors.html" . }}</div>
+                <div class="writing-venue">{{ partial "paper-status.html" . }}</div>
+              </div>
+              {{- if $hasDrawer -}}
+                <div class="writing-drawer">
+                  <p>{{ $summary }}</p>
+                </div>
+              {{- end -}}
+            </article>
+          {{- end -}}
+        </div>
+      </div>
+    {{- end -}}
+  {{- end -}}
+</div>

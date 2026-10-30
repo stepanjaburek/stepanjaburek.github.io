@@ -1,62 +1,69 @@
-- title: "Political Debates about Ideology under Postcommunism: Salience and Sentiment of the Left and Right in the Czech Parliament, 1993–2023"
-  authors: ["Štěpán Jabůrek", "Vojtěch Pohanka", "Jan Vondráček"]
-  year: 2025
-  kind: working_paper
-  status: "revise and resubmit"
+- title: "The Discipline of Office: Government-Opposition Dynamics and the Legitimation of Global Economic Governance"
+  authors: ["Štěpán Jabůrek", "Michal Parizek"]
+  year: 2026
+  field: "IPE"
+  status: "WP"
+  venue: ""
   link: ""
   pdf: ""
-  image: "images/ideology.jpeg"
+  image: "images/ios.png"
 
 - title: "Which Dogs Stop Barking? Government Roles and Partisan Communication about the European Union"
   authors: ["Štěpán Jabůrek"]
   year: 2025
-  kind: working_paper
-  status: "working paper"
+  field: "IPE"
+  status: "WP"
+  venue: ""
   link: ""
   pdf: ""
   image: ""
 
-- title: "The Discipline of Office: Government-Opposition Dynamics and the Legitimation of Global Economic Governance"
-  authors: ["Štěpán Jabůrek", "Michal Parizek"]
-  year: 2026
-  kind: working_paper
-  status: "working paper"
+- title: "Political Debates about Ideology under Postcommunism: Salience and Sentiment of the Left and Right in the Czech Parliament, 1993–2023"
+  authors: ["Štěpán Jabůrek", "Vojtěch Pohanka", "Jan Vondráček"]
+  year: 2025
+  field: "Political Ideology"
+  status: "R&R"
+  venue: ""
   link: ""
   pdf: ""
-  image: "images/ios.png"  
-
-- title: "Beyond Reliability: Practical Equivalence of Downstream Inferences in Machine-Translated Political Text"
-  authors: ["Štěpán Jabůrek", "Lukas Warode", "Adam Černý"]
-  year: 2026
-  kind: working_paper
-  status: "working paper"
-  link: ""
-  pdf: ""
-  image: "images/transl.png" 
+  image: "images/ideology.jpeg"
 
 - title: "Authoritarian Legacies and Symbolic–Operational Ideology (In)Congruence in Parliamentary Debates"
   authors: ["Lukas Warode", "Štěpán Jabůrek", "Vojtěch Pohanka", "Jan Vondráček"]
   year: 2026
-  kind: working_paper
-  status: "working paper"
+  field: "Political Ideology"
+  status: "WP"
+  venue: ""
   link: ""
   pdf: ""
   image: ""
 
+- title: "Beyond Reliability: Practical Equivalence of Downstream Inferences in Machine-Translated Political Text"
+  authors: ["Štěpán Jabůrek", "Lukas Warode", "Adam Černý"]
+  year: 2026
+  field: "Methods"
+  status: "WP"
+  venue: ""
+  link: ""
+  pdf: ""
+  image: "images/transl.png"
+
 - title: "The Bayesian Divide in Political Science"
   authors: ["Štěpán Jabůrek"]
   year: 2026
-  kind: working_paper
-  status: "working paper"
+  field: "Science of Science"
+  status: "WP"
+  venue: ""
   link: ""
   pdf: ""
-  image: ""  
+  image: ""
 
 - title: "Conceptual Review of Quantum Social Science: Familiar Old Wine in New Bottles?"
   authors: ["Jakub Tesař", "Michael Schnabel", "Štěpán Jabůrek"]
   year: 2025
-  kind: working_paper
-  status: "working paper"
+  field: "Science of Science"
+  status: "WP"
+  venue: ""
   link: ""
   pdf: ""
   image: "images/qss.png"

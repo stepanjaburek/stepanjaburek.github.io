@@ -1,0 +1,23 @@
+{{- if .coauthors -}}
+  {{- .coauthors -}}
+{{- else if .authors -}}
+  {{- $me := "Štěpán Jabůrek" -}}
+  {{- $co := slice -}}
+  {{- range .authors -}}
+    {{- if ne . $me -}}
+      {{- $co = $co | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $n := len $co -}}
+  {{- if eq $n 0 -}}
+    —
+  {{- else if eq $n 1 -}}
+    with {{ index $co 0 }}
+  {{- else if eq $n 2 -}}
+    with {{ index $co 0 }} and {{ index $co 1 }}
+  {{- else -}}
+    with {{ delimit (first (sub $n 1) $co) ", " }}, and {{ index $co (sub $n 1) }}
+  {{- end -}}
+{{- else -}}
+  —
+{{- end -}}
