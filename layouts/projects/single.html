@@ -1,33 +1,62 @@
 {{ define "main" }}
-{{ $projects := hugo.Data.projects }}
+{{ $projects := default (slice) hugo.Data.projects }}
+{{ $current := where $projects "status" "current" }}
+{{ $past := where $projects "status" "past" }}
 
 <section class="page-content projects-page">
   <h1 class="page-title">Projects</h1>
   
-  {{ with $projects }}
-    {{ $count := len . }}
+  {{ if or $current $past }}
     <div class="imas-research-index">
-      <div class="minimal-section">
-        <div class="section-head">
-          <h2 class="section-label"><span class="section-num">01</span> &middot; Research Grants &amp; Projects</h2>
-          <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Project{{ else }}Projects{{ end }}</span>
-        </div>
-        <div class="writing-list">
-          {{ range . }}
-            <article class="writing-row">
-              <div class="writing-title">
-                {{ if .url }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}
-              </div>
-              {{ with .description }}<p class="project-desc">{{ . }}</p>{{ end }}
-              {{ with .url }}
-                <div class="inline-links-bar">
-                  <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">Project Website ↗</a>
+      {{ with $current }}
+        {{ $count := len . }}
+        <div class="minimal-section" id="current-projects">
+          <div class="section-head">
+            <h2 class="section-label"><span class="section-num">01</span> &middot; Current Grants &amp; Projects</h2>
+            <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Project{{ else }}Projects{{ end }}</span>
+          </div>
+          <div class="writing-list">
+            {{ range . }}
+              <article class="writing-row">
+                <div class="writing-title">
+                  {{ if .url }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}
                 </div>
-              {{ end }}
-            </article>
-          {{ end }}
+                {{ with .description }}<p class="project-desc">{{ . }}</p>{{ end }}
+                {{ with .url }}
+                  <div class="inline-links-bar">
+                    <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">Project Website ↗</a>
+                  </div>
+                {{ end }}
+              </article>
+            {{ end }}
+          </div>
         </div>
-      </div>
+      {{ end }}
+
+      {{ with $past }}
+        {{ $count := len . }}
+        <div class="minimal-section" id="past-projects">
+          <div class="section-head">
+            <h2 class="section-label"><span class="section-num">02</span> &middot; Past Grants &amp; Projects</h2>
+            <span class="section-meta">{{ $count }} {{ if eq $count 1 }}Project{{ else }}Projects{{ end }}</span>
+          </div>
+          <div class="writing-list">
+            {{ range . }}
+              <article class="writing-row">
+                <div class="writing-title">
+                  {{ if .url }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}
+                </div>
+                {{ with .description }}<p class="project-desc">{{ . }}</p>{{ end }}
+                {{ with .url }}
+                  <div class="inline-links-bar">
+                    <a class="inline-link" href="{{ . }}" rel="noopener" target="_blank">Project Website ↗</a>
+                  </div>
+                {{ end }}
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
     </div>
   {{ else }}
     <p>No projects listed at the moment.</p>
