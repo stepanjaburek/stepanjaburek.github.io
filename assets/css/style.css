@@ -3,46 +3,46 @@
   --font-mono: 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
 }
 
-/* Default Light (Parchment Paper) Theme */
+/* Default Light (Warm Olive / Hunter Paper) Theme */
 :root, [data-theme="light"] {
-  --color-bg: #fdfcf9;          /* warm white book paper */
-  --color-surface: #f5f1e8;     /* classic creamy cardstock */
-  --color-text: #1b1918;        /* deep printer ink charcoal */
-  --color-text-muted: #5e5953;  /* faded printing text */
-  --color-accent: #164f8a;      /* classic navy print ink blue */
-  --color-accent-hover: #0c335b;
-  --color-border: #dedacb;      /* subtle paper-edge color */
-  --color-highlight: #f7f4e9;   /* soft highlighted field */
-  --color-shadow: rgba(27, 25, 24, 0.05);
-  --color-jmp-bg: #f4eee1;
+  --color-bg: #fcfbf6;          /* warm parchment paper */
+  --color-surface: #f2f1e6;     /* warm moss cardstock */
+  --color-text: #1c1f18;        /* deep olive-charcoal ink */
+  --color-text-muted: #5a6052;  /* muted sage-olive text */
+  --color-accent: #2d5a27;      /* hunter green ink */
+  --color-accent-hover: #1d3d19;
+  --color-border: #dadcd0;      /* subtle moss paper-edge */
+  --color-highlight: #f5f5eb;   /* soft highlighted row */
+  --color-shadow: rgba(28, 31, 24, 0.05);
+  --color-jmp-bg: #eef0e2;
 
   /* Navigation styling (Colored Stripe containing buttons) */
-  --color-nav-bg: #164f8a;
-  --color-nav-text: #fdfcf9;
-  --color-nav-hover: #ffffff;
-  --color-nav-border: #0c335b;
+  --color-nav-bg: #284b24;
+  --color-nav-text: #fcfbf6;
+  --color-nav-hover: #d9f99d;
+  --color-nav-border: #1b3518;
   --color-nav-toggle-hover: rgba(255, 255, 255, 0.15);
 }
 
-/* Dark (Obsidian Sepia) Theme */
+/* Dark (Acid Lime Terminal) Theme */
 [data-theme="dark"] {
-  --color-bg: #151312;          /* charcoal dark paper */
-  --color-surface: #201e1c;     /* slightly lighter sepia dark */
-  --color-text: #eae4dc;        /* clean aged book parchment ink */
-  --color-text-muted: #9c9183;  /* faded gold-grey text */
-  --color-accent: #f2c75a;      /* vintage amber print gold */
-  --color-accent-hover: #d1a539;
-  --color-border: #332f2b;      /* dark warm border lines */
-  --color-highlight: #22201d;
+  --color-bg: #10120e;          /* carbon moss dark */
+  --color-surface: #181c15;     /* dark olive surface */
+  --color-text: #eaefe4;        /* crisp pale sage ink */
+  --color-text-muted: #8f9984;  /* muted moss-grey text */
+  --color-accent: #a3ff12;      /* acid lime neon green */
+  --color-accent-hover: #c2ff5e;
+  --color-border: #283022;      /* dark moss border lines */
+  --color-highlight: #1b2017;
   --color-shadow: rgba(0, 0, 0, 0.35);
-  --color-jmp-bg: #1d1a18;
+  --color-jmp-bg: #151912;
 
   /* Navigation styling */
-  --color-nav-bg: #201e1c;
-  --color-nav-text: #eae4dc;
-  --color-nav-hover: #f2c75a;
-  --color-nav-border: #332f2b;
-  --color-nav-toggle-hover: rgba(255, 255, 255, 0.05);
+  --color-nav-bg: #161913;
+  --color-nav-text: #eaefe4;
+  --color-nav-hover: #a3ff12;
+  --color-nav-border: #283022;
+  --color-nav-toggle-hover: rgba(163, 255, 18, 0.08);
 }
 
 * { box-sizing: border-box; }
@@ -1011,6 +1011,16 @@ p {
 .writing-venue .status-label {
   font-weight: 600;
   color: var(--color-text);
+}
+
+[data-theme="dark"] .section-num,
+[data-theme="dark"] .writing-venue .status-label,
+[data-theme="dark"] .nav-brand {
+  color: var(--color-accent);
+}
+
+[data-theme="dark"] .section-head {
+  border-bottom-color: var(--color-accent);
 }
 
 .writing-drawer {
