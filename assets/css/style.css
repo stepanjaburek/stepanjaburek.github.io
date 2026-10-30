@@ -380,7 +380,8 @@ p {
   justify-content: center;
   margin-top: 0.85rem;
 }
-.profile-btn {
+.profile-btn,
+.profile-btn:visited {
   display: inline-flex;
   align-items: center;
   gap: 0.38rem;
@@ -394,7 +395,8 @@ p {
   text-decoration: none;
   transition: all 0.15s ease;
 }
-.profile-btn:hover {
+.profile-btn:hover,
+.profile-btn:visited:hover {
   background-color: var(--color-highlight);
   border-color: var(--color-accent);
   color: var(--color-accent);
@@ -404,12 +406,9 @@ p {
 .profile-btn svg {
   width: 13px;
   height: 13px;
-}
-.linkedin-btn svg rect {
-  transition: fill 0.15s ease;
-}
-.linkedin-btn:hover svg rect {
-  fill: #004182;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  transition: color 0.15s ease;
 }
 .intro-bio {
   border-left: 1px solid var(--color-border);
